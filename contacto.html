@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+</head>
+
+<body>
+    <h1>Formulario de contacto</h1>
+
+    <form action="link" method="GET" target="_blank">
+
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" id="nombre" placeholder="Juan">
+        <br>
+        <label for="apellido">Apellido: </label>
+        <input type="text" name="apellido" id="apellido" placeholder="Perez">
+        <br>
+        <label for="genero">Genero: </label>
+        <input type="radio" name="genero" value="hombre">Hombre
+        <input type="radio" name="genero" value="mujer">Mujer
+        <input type="radio" name="genero" value="otro">Otro
+        <br>
+        <label for="fecha-nac">Fecha de Nacimiento (dd/mm/yyyy): </label>
+        <input type="date" name="fecha-nac" id="date">
+        <br>
+        <label for="nacionalidad">Nacionalidad: </label>
+        <select name="nacionalidad" id="nacionalidad">
+            <option value="Antegria">Antegria</option>
+            <option selected value="Arstotzka">Arstotzka</option>
+            <option value="Impor">Impor</option>
+            <option value="Kolechia">Kolechia</option>
+            <option value="Obristan">Obristan</option>
+            <option value="Republia">Republia</option>
+            <option value="United Federation">United Federation</option>
+            <option value="Cobrastan">Cobrastan</option>
+        </select>
+        <br>
+        <label for="ciudad">Ciudad:</label>
+        <input type="text" name="ciudad" id="ciudad" placeholder="West Grestin">
+        <br>
+        <label for="pasaporte">Número de pasaporte:</label>
+        <input type="text" name="pasaporte" id="pasaporte" placeholder="1234-asdf">
+        <br>
+        <label for=" foto-id">Posee foto actualizada? </label>
+        <input type="radio" name="foto-id" value="si">si
+        <input type="radio" name="foto-id" value="no">no
+        <br>
+        <label for="info-adicional">Información adicional (marcar si posee): </label>
+        <input type="checkbox" name="info-adicional" value="id card">id card
+        <br>
+        <input type="checkbox" name="info-adicional" value="autorización diplomática">autorización diplomática
+        <br>
+        <input type="checkbox" name="info-adicional" value="Permiso de acceso">Permiso de acceso
+        <br>
+        <input type="checkbox" name="info-adicional" value="pase de trabajo">pase de trabajo
+        <br>
+        <input type="checkbox" name="info-adicional" value="pedido de asilo">pedido de asilo
+        <br>
+        <input type="checkbox" name="info-adicional" value="cerificado de vacunación">cerificado de vacunación
+        <br>
+        <input type="checkbox" name="info-adicional" value="identificación suplementaria">identificación suplementaria
+        <br>
+        <input type="checkbox" name="info-adicional" value="ticket de entrada">ticket de entrada
+        <br>
+        <input type="submit" value="enviar">
+    </form>
+
+<aside>
+<h2>Puesto de control</h2> <!--falta detallar el iframe y la ubicacion-->
+<a href="https://goo.gl/maps/obwQiLw3LZmorte18">Checkpoint Charlie</a>
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9713.745068425425!2d13.3903913!3d52.5074434!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x23a50042477d89c8!2sCheckpoint%20Charlie!5e0!3m2!1ses!2sar!4v1631216332504!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+</aside>
+
+
+</body>
+
+</html>

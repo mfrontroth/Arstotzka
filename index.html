@@ -3,46 +3,90 @@
 
 <!--El TPO deberá cumplir con los siguientes requisitos:
 ● Poseer al menos 5 páginas html, siendo su temática libre. 
-● Utilizar las etiquetas semánticas de HTML5 de forma correcta.
-● Contener un formulario.
-● Utilizar iframes
+LISTO
 
-● Utilizar íconos de FontAwesome (OK Se usaron para social media)
+● Utilizar las etiquetas semánticas de HTML5 de forma correcta.
+FALTA REVISAR
+
+● Contener un formulario.
+LISTO
+
+● Utilizar iframes
+LISTO
+
+● Utilizar íconos de FontAwesome 
+LISTO Se usaron para social media
+
 
 ● Utilizar fuentes locales o bien de Google Fonts.
+FALTA
+
 ● Tener al menos una página totalmente responsive con mínimo 3 puntos
 de corte para 3 tamaños de dispositivos (PC escritorio, Tablet, Celular).
+FALTA
+
 ● Utilizar al menos una animación, transformación o una transición.
+FALTA (INCLUIRLA EN LOS BOTONES)
+
+
 ● Poseer una estructura HTML maquetada con Flexbox y/o Grid.
+FALTA (FLEXBOX PARA FOTOS Y GRID PARA EL FORMULARIO)
+
 ● Utilizar un componente (sólo uno) de Bootstrap.
+FALTA
+
 ● La página deberá subirse a un servidor on-line para poder ser
 navegada por el Docente. Ejemplo: Netlify o similar.
+FALTA
+
 -->
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glory to Arstotzka</title>
 
-    <!--Font family -->
+    <!--falvicon: 16x16 y 32x32-->
+    <link rel="icon" href="img/glory.ico" type="image/png" sizes="16x16 32x32">
+
+    <!--Iconos (Font Awesome): Usado para los socials media-->
+    <script src="https://kit.fontawesome.com/2e4437d396.js" crossorigin="anonymous"></script>
+
+
+    <!--Font family 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400;700&display=swap" rel="stylesheet">
+-->
 
-    <!--Font Awesome-->
-    <script src="https://kit.fontawesome.com/2e4437d396.js" crossorigin="anonymous"></script>
 
     <!--Estilos-->
-    <link rel="stylesheet" href="css/styles.css">
+    <!-- <link rel="stylesheet" href="css/styles.css"> -->
 
 
-    <title>Glory to Arstotzka</title>
+
+
+
 </head>
 
-<body>
-    <div class="wrapper">
 
-        <header>
+
+
+<!-- FALTA
+
+    tabular parrafos 
+
+
+-->
+
+
+
+<body class="wrapper">
+
+    <header>
+        <nav>
+            <a name="arriba"></a> <!--Ancla del footer-->
             <div class="socials">
                 <a href="https://www.youtube.com/channel/UC0kDm-m1KnI5-Fz2QAkrugA" target="_blank"><i
                         class="fab fa-youtube"></i></a>
@@ -51,26 +95,138 @@ navegada por el Docente. Ejemplo: Netlify o similar.
                 <a href="https://twitter.com/dukope?lang=es" target="_blank"><i class="fab fa-twitter"></i></a>
             </div>
 
-            <img src="img/logo.jpg" alt=" Glory to Arstotzka, logo" id="logo">
+            <div class="main-menu">
 
-            <ul class="main-menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="arstotzka.html" target="_blank">Arstotzka</a></li>
-                <li><a href="timeline.html">Timeline</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="arstotzka.html" target="_blank">Arstotzka</a></li>
+                    <li><a href="timeline.html" target="_blank">Timeline</a></li>
+                    <li><a href="propaganda.html" target="_blank">Propaganda</a></li>
+                    <li><a href="lucasPope.html" target="_blank">About Lucas Pope</a></li>
+                </ul>
+            </div>
 
-                <li>Store</li>
-            </ul>
+            
+            
+        </nav>
 
-        </header>
+        <img src="img/main-logo.png" alt=" Glory to Arstotzka, logo" id="main_logo">
 
+    </header>
 
+    <main>
+        <section>
 
+            <article>
+                <h2 translate="no">Papers, Please</h2>
+                <!--que no se traduzca papers please-->
+                <p>
+                    <span translate="no">Papers, Please</span> es un juego que tiene lugar en 1982 después de una guerra
+                    de seis años entre los
+                    estados
+                    ficticios de Arstotzka y Kolechia.
+                    <br>
+                    La mecánica del juego se enfoca en la vida laboral de un inspector de inmigración que trabaja para
+                    el
+                    gobierno de Arstotzka en un control fronterizo ubicado entre Arstotzka y Kolechia. El jugador
+                    inspecciona los documentos de los inmigrantes que llegan, teniendo a su disposición varias
+                    herramientas para determinar si los papeles de estos están en orden, todo esto con el objetivo de
+                    mantener fuera del país a personas no deseadas, tales como terroristas, delincuentes, espías o
+                    contrabandistas.
+                    <br>
+                    <img src="img/img-juego.png" alt="imagen de inicio del juego">
+                    <br>
 
+                    Cuando se descubre alguna discrepancia en algún documento, el jugador puede interrogar al
+                    solicitante sobre esta, y posiblemente exigir más información, como revisar huellas digitales o
+                    hacer un
+                    escáner a cuerpo completo. En ocasiones, el jugador tendrá la oportunidad de arrestar a los
+                    solicitantes
+                    e, incluso, los solicitantes intentarán sobornar al inspector.
+                    <br>
 
+                    Al final de cada día, el jugador gana dinero en función de la cantidad de personas que han sido
+                    procesadas junto con los sobornos recogidos, menos las sanciones por errores. Luego el jugador debe
+                    realizar un presupuesto para saber cómo gastar ese dinero inteligentemente en alquiler, comida,
+                    calefacción, y otras necesidades en materia de vivienda de clase baja para él y su familia.
+                    <br>
+                    Como las relaciones entre Arstotzka y los países vecinos están deterioradas (a veces debido a los
+                    ataques terroristas), poco a poco se irán agregando nuevas reglas, tales como negarle la entrada a
+                    ciudadanos de determinados países o exigir documentación actual de los ciudadanos propios. El
+                    jugador es
+                    retado con dilemas morales a medida que progresa en el juego.
 
+                    <br>
+                    <img src="img/glory-main.gif" alt="gif glory to Arstotzka">
+                    <br>
+                </p>
+            </article>
 
-    </div>
+            <article>
+                <h2>Desarrollo</h2>
+                <!--hacer link de LUCAS POPE-->
+                <!--que no se traduzca papers please-->
+                <p>
+                    <img src="img/control.png" alt="imagen, obedece">
+                    <br>
+                    <span translate="no">Papers, Please</span> fue desarrollado por <a href="lucasPope.html"
+                        target="_blank">Lucas Pope</a> en
+                    noviembre del 2012, trabajando con el lenguaje de programación Haxe y NME framework, siendo ambas
+                    aplicaciones de código abierto.​ <a href="lucasPope.html" target="_blank">Lucas Pope</a> es un
+                    inmigrante estadounidense que vive en Japón, y como tal, ha tenido que lidiar con asuntos
+                    migratorios en sus viajes. Este pensó que sus experiencias migratorias (descritas por el mismo como
+                    "tensas") podían materializarse en un juego. Antes del lanzamiento del juego, Pope difundió un
+                    formulario para el público, donde la gente podía poner sus nombres; estos nombres posteriormente se
+                    asignaron de forma aleatoria a los inmigrantes del juego. <span translate="no">Papers, Please</span>
+                    fue presentado a Greenlight
+                    Steam el 11 de abril de 2013, dándole luz verde el 1 de mayo.
+                </p>
+            </article>
+        </section>
+
+    </main>
+
+    <aside>
+
+        <h2>Últimas noticias</h2>
+        <div>
+            <img src="img/news/headline.png" alt="tapa de diario, atentado">
+            <br>
+        </div>
+
+        <div>
+            <h3>Video exclusivo</h3>
+            <p>ADVERTENCIA: Estas imágenes pueden herir la sensibilidad</p>
+            <video src="img/news/atentado.mp4"></video>
+        </div>
+
+        <div>
+            <h3>Buscado</h3>
+            <img src="img/news/Ezic_mensajero.png" alt="imagen del terrorista">
+
+            <a href="denuncia.html" target="_blank">Denuncie aquí</a>
+
+        </div>
+
+    </aside>
+
+    <footer>
+
+        <div>
+            <p>Escucha el Himno nacional</p>
+        </div>
+
+        <div>
+            <a href="https://papersplea.se/" target="_blank">Página oficial <span translate="no">Papers, Please</span>
+            </a>
+        </div>
+
+        <div>
+            <a href="#arriba">ir arriba</a>
+        </div>
+
+    </footer>
+
 </body>
 
 </html>

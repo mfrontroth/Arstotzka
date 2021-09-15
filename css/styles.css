@@ -1,19 +1,10 @@
-body{
-    background-color: green;
-    color: white;
-    font-family: 'Nunito Sans', sans-serif;
-}
 
-header{
-    background-color: red;
-    height: 200px;
-    /*overflow: hidden;*/
-    position: relative;
-}
 
 
 /****Envoltorio general****/
 .wrapper{ 
+    background-color: #3c483c; /*se usa el color gris del logo*/
+    color: whitesmoke;
     margin: 0 auto;             /* Para centrarlo horizontalmente*/
     max-width: 1000px;           
     /*
@@ -22,15 +13,28 @@ header{
     Versión para teléfonos	780 px
     */
     width: 100%;
+    }
+
+header, footer{
+    background-color: black;
 }
 
+.socials i {
+    color: whitesmoke;
+}
 
-/**** main menu ****/
+.main-menu a {
+background-color:  whitesmoke;
+color: black;
+text-decoration: none;
+}
+
+/**** main menu 
 header ul{
 background-color: greenyellow;
 margin: 0;
 text-align: center;
-text-decoration: none;
+
 }
 header ul li{
     display: inline-block;
@@ -47,7 +51,7 @@ header ul li{
     transform: translateX(-50%); 
 }
 
-/**** logo ****/
+ 
 #logo{
     width: 250px;
     position: absolute;
@@ -56,7 +60,7 @@ header ul li{
     transform: translateX(-50%) translateY(-50%);
 }
 
-/**** social media ****/
+
 .socials{
     border: solid blue;
     height: 25px;
@@ -73,3 +77,17 @@ header ul li{
 
  }
 
+ body{
+    background-color: green;
+    color: white;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+header{
+    background-color: red;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+}
+
+*/

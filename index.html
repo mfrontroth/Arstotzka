@@ -1,6 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glory to Arstotzka</title>
+
+    <!--falvicon: 16x16 y 32x32-->
+    <link rel="icon" href="img/glory.ico" sizes="16x16 32x32">
+
+    <!--Iconos (Font Awesome): Usado para los socials media-->
+    <script src="https://kit.fontawesome.com/2e4437d396.js" crossorigin="anonymous"></script>
+
+    <!--Font family 
+font-family: 'Open Sans', sans-serif;-> para cuerpo
+font-family: 'Russo One', sans-serif;-> para títulos
+        -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,400&family=Russo+One&display=swap"
+        rel="stylesheet">
+
+    <!--Estilos-->
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
 <!--El TPO deberá cumplir con los siguientes requisitos:
 
 ● Poseer al menos 3 páginas html, siendo su temática libre.
@@ -19,7 +46,7 @@ LISTO
 LISTO
 
 ● Utilizar fuentes locales o bien de Google Fonts.
-FALTA
+listo
 
 ● Tener una página totalmente responsive con 3 puntos de corte para 3 tamaños de
 dispositivos (PC escritorio, Tablet, Celular).
@@ -51,30 +78,6 @@ FALTA
 
 -->
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Glory to Arstotzka</title>
-
-    <!--falvicon: 16x16 y 32x32-->
-    <link rel="icon" href="img/glory.ico" type="image/png" sizes="16x16 32x32">
-
-    <!--Iconos (Font Awesome): Usado para los socials media-->
-    <script src="https://kit.fontawesome.com/2e4437d396.js" crossorigin="anonymous"></script>
-
-    <!--Font family 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400;700&display=swap" rel="stylesheet">
--->
-
-    <!--Estilos-->
-    <link rel="stylesheet" href="css/styles.css">
-
-</head>
-
-
 
 
 <!-- TODO:
@@ -84,181 +87,192 @@ FALTA
 -->
 
 
-
 <body class="wrapper">
-    <header>
-        <nav>
-            <!--Ancla del footer-->
-            <a name="arriba"></a>
-            <div class="socials">
-                <a href="https://www.youtube.com/channel/UC0kDm-m1KnI5-Fz2QAkrugA" target="_blank"><i
-                        class="fab fa-youtube"></i></a>
-                <a href="https://ar.pinterest.com/SaquenALosPeronchos/papers-please/" target="_blank"><i
-                        class="fab fa-pinterest-p"></i></a>
-                <a href="https://twitter.com/dukope?lang=es" target="_blank"><i class="fab fa-twitter"></i></a>
-            </div>
+    <header class="header">
 
-            <div class="main_menu">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="posters.html">Posters</a></li>
-                    <li><a href="mas-buscados.html">Más buscados</a></li>
-                    <li><a href="denuncie.html">Denuncie</a></li>
-                    <li><a href="papers-please.html">Papers, Please</a></li>
+        <a name="arriba"></a>
+        <!--Ancla del footer-->
 
-                </ul>
-            </div>
+        <div class="top-logo">
+
+            <img src="img/top-logo.png" alt="Main Logo Glory to Arstotzka" id="top-logo" width="50px">
+
+        </div>
+
+        <nav class="nav">
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="posters.html">Posters</a></li>
+                <li><a href="mas-buscados.html">Más buscados</a></li>
+                <li><a href="denuncie.html">Denuncie</a></li>
+                <li><a href="papers-please.html">Papers, Please</a></li>
+            </ul>
+
+            <!-- prettier BUSCVAR!!!
+-->
         </nav>
 
-        <img src="img/top-logo.png" alt="Main Logo Glory to Arstotzka" id="top-logo" width="200">
+        <div class="social">
+
+            <a href="https://www.youtube.com/channel/UC0kDm-m1KnI5-Fz2QAkrugA" target="_blank"><i
+                    class="fab fa-youtube"></i></a>
+            <a href="https://ar.pinterest.com/SaquenALosPeronchos/papers-please/" target="_blank"><i
+                    class="fab fa-pinterest-p"></i></a>
+            <a href="https://twitter.com/dukope?lang=es" target="_blank"><i class="fab fa-twitter"></i></a>
+
+        </div>
+
     </header>
 
-    <main>
-        <section>
-            <article>
-                <h1>Arstotzka</h1>
+    <main class="main">
+        <div class="section-main">
+            <section class="section-a">
 
-                <img src="img/main-top-left.png" alt="Imagen de propaganda: Gloria a Arstotzka" width=200>
+                <article class="article">
+                    <h1>Arstotzka</h1>
+                    <img src="img/main-top-left.png" alt="Imagen de propaganda: Gloria a Arstotzka" width=50px>
+                    <p> Arstotzka es un país comunista en <a href="papers-please.html">Papers, Please</a>. Su sede de
+                        gobierno se encuentra en Paradizna, su ciudad capital.
+                        <br>
+                        Arstotzka atrae a muchos inmigrantes y trabajadores extranjeros, por lo que el puesto de control
+                        fronterizo de Grestin es un lugar "caliente" y es donde toda la acción tiene lugar.
+                        <br>
 
-                <p> Arstotzka es un país comunista en <span class="papers_please">Papers, Please</span>. La sede del
-                    gobierno se encuentra en su capital, la ciudad de Paradizna. Siendo el puesto de control fronterizo
-                    de Grestin, donde el jugador desarrolla su trabajo.
-                    <br>
-                    El gobierno Arstotzkiano utiliza la pena capital y el trabajo forzoso como sistema de castigo. Para
-                    ser considerado para el empleo, se espera que los arstotzkianos mantengan a las familias y tener al
-                    menos un miembro de la familia con vida para continuar el crecimiento del país. Arstotzka también
-                    atrae a muchos inmigrantes y trabajadores extranjeros.
-                    <br>
-                    El lema del país es "Gloria a Arstotzka".
-                </p>
+                        El gobierno arstotzkiano utiliza la pena capital y el trabajo forzoso como sistema de castigo.
+                        Se espera que los arstotzkianos mantengan a sus familias y tengan al menos a un miembro de su
+                        familia con vida para continuar el crecimiento del país.
+                        <br>
+                        El lema del país es "Gloria a Arstotzka".
+                    </p>
 
-                <div>
-                    <p>Dale click para para escuchar nuestro Himno nacional</p>
-                    <audio src="music/Papers, Please - Theme Song.mp3" controls="muted"></audio>
-                </div>
+                    <div>
+                        <h3> Himno nacional </h3>
+                        <audio src="music/Papers_Please_Theme_Song.mp3" controls="muted"></audio>
+                    </div>
 
-                <div>
-                    <img src="img/glory-main.gif" alt="soldado saludando a la bandera de Arstrozka" id="glory-main-gif"
-                        width="200">
-                </div>
-            </article>
-            <hr>
-            <article>
-                <h2>Historia reciente</h2>
-                <!--decorar textos y no traducir y poner marcadores de que es EZIC-->
-                <p>
-                    Arstotzka y Kolechia estuvieron en la <span>Guerra de los Seis Años</span> poco antes de septiembre
-                    de 1982 y las relaciones entre los dos los países siguen siendo aún volátiles. Un tema
-                    particularmente acalorado es el estado de la ciudad de Grestin, una frontera ciudad dividida en East
-                    Grestin, que está bajo la jurisdicción de Arstotzka, y West Grestin, que es parte de Kolechia.
-                    <br>
-                    Cruzar la frontera entre las dos naciones había sido imposible, incluso para los ciudadanos de
-                    Arstotzka, hasta el 23 de Noviembre de 1982 cuando Arstotzka abrió un puesto de control para
-                    permitir la entrada desde Kolechia.
-                    <br>
-                    Sin embargo, constantes ataques terroristas en la frontera, contrabando, tráfico de personas y
-                    disturbios causados principalmente ​​por <span title="Organización terrorista">EZIC</span> hizo
-                    que Arstotzka aplicara políticas fronterizas más estrictas que incluyen hasta la confiscación de
-                    pasaportes y auditorías de información completa para todos los trabajadores del gobierno
-                    Arstotzkiano.
-                </p>
-                <div>
-                    <img src="img/cartel-atencion.png" alt="cartel de atencion" width="200">
-                </div>
+                    <div>
+                        <img src="img/glory-main.gif" alt="soldado saludando a la bandera de Arstrozka"
+                            id="glory-main-gif" width=50px>
+                    </div>
 
-            </article>
-            <hr>
-            <article>
-                <h2>Principales Ministerios</h2>
-                <div>
-                    <img src="img/politico.PNG" alt="imagen de un político de Arstotzka" width="100">
-                </div>
-                <h3>Ministerio de Admisión (M.O.A.)</h3>
-                <p>
-                    El Ministerio de Admisión (M.O.A.) está a cargo del control fronterizo. Emite la mayoría de los
-                    documentos oficiales requeridos y también emite citaciones en caso de que un inspector cometa algun
-                    un error.
-                </p>
-                <div>
-                    <img src="img/MOA-seal.png" alt="Sello del ministerio de Admisión" width="100">
-                </div>
-                <h3>Ministerio de Trabajo (M.O.L.)</h3>
-                <p>
-                    El Ministerio de Trabajo (M.O.L.) emite pases de trabajo a los inmigrantes que desean trabajar en
-                    Arstotzka.
-                </p>
-                <div>
-                    <img src="img/MOL-seal.png" alt="Sello del ministerio de trabajo" width="100">
-                </div>
-                <h3>Otros</h3>
-                <div>
-                    <img src="img/control.PNG" alt="imagen de un político de Arstotzka" width="100">
-                </div>
-                <ul>
-                    <li>Ministerio de Información: Realiza auditorías de información sobre empleados gubernamentales y
-                        monitorea posibles amenazas nacionales e internacionales a Arstotzka.</li>
-                    <li>Ministerio de Salud: a cargo de la salud pública. </li>
-                    <li>Ministerio de Renta: investiga anomalías financieras. Los ciudadanos pueden presentar un informe
-                        si notan un aumento repentino de la riqueza de alguien.</li>
-                    <li>Ministerio de Comercio: Produce moneda de curso legal.</li>
-                </ul>
-            </article>
-            <hr>
-            <article>
-                <h2>Geografía</h2>
-                <p>Geográficamente, Arstotzka bordea con los países de Kolechia y Obristan, y se encuentra dividido 8
-                    distritos:
-                </p>
-                <ul>
-                    <li>Altan</li>
-                    <li>Vescillo</li>
-                    <li>Burnton</li>
-                    <li>Octovalis</li>
-                    <li>Gennistora</li>
-                    <li>Lendiforma</li>
-                    <li>Wozenfield</li>
-                    <li>Fardesto</li>
-                </ul>
-                <div>
-                    <img src="img/mapa.png" alt="mapa de Arstotzka" width="200">
-                </div>
-            </article>
-        </section>
+                    <h2>Historia reciente</h2>
+                    <!--decorar textos y no traducir y poner marcadores de que es EZIC-->
+                    <p>
+                        Arstotzka y Kolechia estuvieron en la <span class="cursiva">Guerra de los Seis Años</span> poco
+                        antes de Septiembre
+                        de 1982 y las relaciones entre los dos los países siguen siendo aún volátiles. Un tema
+                        particularmente acalorado es el estado de la ciudad de Grestin, una ciudad-frontera dividida en
+                        East Grestin, que se encuentra bajo la jurisdicción de Arstotzka, y West Grestin, que es parte
+                        de Kolechia.
+                        <br>
+                        Cruzar la frontera entre las dos naciones había sido imposible, incluso para los ciudadanos de
+                        Arstotzka, hasta el 23 de Noviembre de 1982 cuando Arstotzka abrió un puesto de control para
+                        permitir la entrada desde Kolechia. Sin embargo, constantes ataques terroristas en la frontera,
+                        contrabando, tráfico de personas y disturbios causados principalmente ​​por <span
+                            class="cursiva negrita" title="Organización terrorista">E.Z.I.C.</span> hizo que Arstotzka
+                        aplicara políticas fronterizas más estrictas que incluyen desde la confiscación de pasaportes y
+                        auditorías de información completa para todos los trabajadores del gobierno Arstotzkiano, hasta
+                        arrestos y fusilamientos.
+                    </p>
+                    <div>
+                        <img src="img/cartel-atencion.png" alt="cartel de atencion" width=50px>
+                    </div>
+                </article>
+            </section>
+
+            <section class="section-mg">
+                <secrtion class="section-m">
+                    <article class="article">
+                        <h2>Principales Ministerios</h2>
+                        <div class="img-politics">
+                            <img src="img/politico.PNG" alt="imagen de un político de Arstotzka" width=50px>
+                            <img src="img/control.PNG" alt="imagen de un político de Arstotzka" width=50px>
+                        </div>
+
+                        <div class="ministries">
+                            <h3>Ministerio de Admisión</h3>
+                            <p>
+                                El Ministerio de Admisión está a cargo del control fronterizo. Emite la mayoría
+                                de los documentos oficiales requeridos y también emite citaciones en caso de que un
+                                inspector cometa algun un error.
+                            </p>
+
+                            <h3>Ministerio de Trabajo</h3>
+                            <p>
+                                El Ministerio de Trabajo emite pases de trabajo a los inmigrantes que desean
+                                trabajar en Arstotzka.
+                            </p>
+
+                            <h3>Ministerio de Información</h3>
+                            <p>Realiza auditorías de información sobre empleados gubernamentales y monitorea posibles
+                                amenazas nacionales e internacionales a Arstotzka.
+                            </p>
+
+                            <h3>Ministerio de Salud</h3>
+                            <p>Ministerio a cargo de la salud pública. </p>
+
+                            <h3>Ministerio de Renta</h3>
+                            <p>Encargado de investigar anomalías financieras. Los ciudadanos pueden presentar un
+                                informe si notan un aumento repentino de la riqueza de alguien.</p>
+
+                            <h3>Ministerio de Comercio</h3>
+                            <p>Ministerio a cargo de producir la moneda de curso legal.</p>
+                        </div>
+                    </article>
+                </secrtion>
+                <section class="section-g">
+                    <article class="article">
+                        <h2>Geografía</h2>
+                        <div class="img-map">
+                            <img src="img/mapa.png" alt="mapa de Arstotzka">
+                        </div>
+                        <div class="geography">
+                            <p>Geográficamente, Arstotzka bordea con los países de Kolechia y Obristan, y se encuentra
+                                dividido 8
+                                distritos:
+                            </p>
+                            <ul>
+                                <li>Altan</li>
+                                <li>Vescillo</li>
+                                <li>Burnton</li>
+                                <li>Octovalis</li>
+                                <li>Gennistora</li>
+                                <li>Lendiforma</li>
+                                <li>Wozenfield</li>
+                                <li>Fardesto</li>
+                            </ul>
+                        </div>
+                    </article>
+                </section>
+            </section>
+        </div>
+        <aside class="aside">
+            <div class="news">
+                <h2>Últimas noticias</h2>
+                <img src="img/news/headline.png" alt="tapa de diario, atentado" class="imagenes" width=50px>
+
+                <h3>Video exclusivo</h3>
+
+                <figure>
+                    <video src="img/news/atentado.mp4" controls autoplay loop muted preload width=50px></video>
+                    <figcaption> ADVERTENCIA: Estas imágenes pueden herir la sensibilidad
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="buscado">
+
+                <h3>Buscado</h3>
+                <a href="mas-buscados.html"><img src="img/news/ezic-buscado.png" alt="imagen del terrorista"
+                        width=50px></a>
+
+
+            </div>
+        </aside>
     </main>
-    <hr>
-    <aside>
-        <div>
-            <h3>Buscado</h3>
-            <img src="img/news/ezic-buscado.png" alt="imagen del terrorista" width="200">
-            <a href="denuncie.html" target="_blank">Denuncie aquí</a>
-        </div>
 
-        <div>
-            <h2>Últimas noticias</h2>
-            <img src="img/news/headline.png" alt="tapa de diario, atentado" class="imagenes">
-        </div>
-
-        <div>
-            <h3>Video exclusivo</h3>
-            <p>ADVERTENCIA: Estas imágenes pueden herir la sensibilidad</p>
-            <video src="img/news/atentado.mp4" type="video/mp4" controls autoplay loop muted preload
-                alt="video del atentado al puesto de control Grestin"></video>
-        </div>
-    </aside>
-
-    <footer>
-        <div>
-            <img src="img/botton-logo.png" alt="logo gloria a arstotzka" width="200">
-        </div>
-
-        <div>
-            <a href="https://papersplease.se/" target="_blank">Página oficial <span translate="no">Papers, Please</span>
-            </a>
-        </div>
-
-        <div>
-            <a href="#arriba">ir arriba</a>
-        </div>
+    <footer class="footer">
+        <a href="#arriba"><i class="fas fa-arrow-alt-circle-up"></i></a>
     </footer>
 </body>
 

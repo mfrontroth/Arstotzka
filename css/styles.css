@@ -15,6 +15,20 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+/********************** transiciones**********************/
+.transition{
+    background-color: green;
+    -webkit-transition: background-color 0.5s linear;
+    -webkit-transition: color 0.5s linear;
+    
+    transition: background-color 0.5s linear;
+    transition: color 0.5s linear;
+  }
+        .transition:hover{
+            background-color: #3F51B5;
+            color: white;
+        }
+
 h1, h2, h3 {
     font-family: 'Russo One', sans-serif;
 }
@@ -29,12 +43,14 @@ h1, h2, h3 {
     font-weight: bold;
 }
 
-li:nth-child(2n+1) {
-    font-weight: bold;
-}
 
 img {
     width: 200px;
+}
+
+/**** para el formulario mcon bootstrap ***/
+fieldset {
+    margin: 5px;
 }
 
 /****Envoltorio general****/
@@ -74,7 +90,7 @@ img {
                 list-style: none;
              }
                 .nav ul li a {
-                    background-color: red;
+                    background-color: red; 
                     text-decoration: none;
                  }
 
@@ -148,8 +164,9 @@ img {
             background-color: yellow;
         }
         .buscado {
-            background-color: red;
+           background-color: red;
         }
+           
 
 .footer {
     background-color: rgb(110, 133, 178);

@@ -13,9 +13,9 @@
     <!--Iconos (Font Awesome): Usado para los socials media-->
     <script src="https://kit.fontawesome.com/2e4437d396.js" crossorigin="anonymous"></script>
 
-    <!--Font family 
-font-family: 'Open Sans', sans-serif;-> para cuerpo
-font-family: 'Russo One', sans-serif;-> para títulos
+    <!--Font family-->
+    <!--      font-family: 'Open Sans', sans-serif;-> para cuerpo
+        font-family: 'Russo One', sans-serif;-> para títulos
         -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,114 +23,92 @@ font-family: 'Russo One', sans-serif;-> para títulos
         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,400&family=Russo+One&display=swap"
         rel="stylesheet">
 
-    <!--Estilos-->
-    <link rel="stylesheet" href="css/styles.css">
-
+    <!--Hoja de Estilos-->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <!--El TPO deberá cumplir con los siguientes requisitos:
-
+¿Cuándo se entrega?
+Fecha límite de entrega: semana del 25/10 al 29/10.
+¿Qué hay que entregar?
+El TPO deberá cumplir con los siguientes requisitos:
 ● Poseer al menos 3 páginas html, siendo su temática libre.
-LISTO
+ok
 
 ● Utilizar etiquetas semánticas para estructurar el sitio de forma correcta.
-FALTA REVISAR
+revisar
 
 ● Contener un formulario de contacto con validación realizada mediante Javascript.
-FALTA 
+falta
 
-● Utilizar iframes.
-LISTO
-
-● Utilizar íconos de FontAwesome.
-LISTO
-
-● Utilizar fuentes locales o bien de Google Fonts.
-listo
-
+● Utilizar iframes, íconos de FontAwesome, y fuentes locales o bien de Google Fonts.
 ● Tener una página totalmente responsive con 3 puntos de corte para 3 tamaños de
 dispositivos (PC escritorio, Tablet, Celular).
-FALTA terminar
-
 ● Utilizar al menos una animación, transformación o una transición (indicar dónde fue
 incorporada la animación).
-transiciones en el nav
-
 ● Poseer una estructura HTML maquetada con Flexbox y/o Grid.
-FALTA
-
 ● Sólo podrá utilizar Bootstrap en la página del formulario del sitio web.
-FALTA
-
 ● La página deberá subirse a un servidor on-line para poder ser navegada por el
 Docente. Ejemplo: Netlify o similar.
-FALTA
-
 ● Además de los aspectos técnicos ya mencionados, el proyecto deberá contemplar
 aspectos de diseño los cuales serán evaluados por el Docente. Para eso se
 recomienda que vean el material disponible en el Aula Virtual. Seminario de
 Diseño Web: https://youtu.be/fVkGt2tYIj0. Para más información, ver material
 incluído en el Aula Virtual Metodologías y herramientas I/Diseño.
-FALTA
+● Nota: el TPO es individual pero en caso querer resolver el proyecto de forma
+grupal, deberán sincronizar el código del TPO en Github (o similar) enviando el link
+del repositorio al Docente. Este requisito obligatorio sólo aplica para los proyectos
+que se desarrollen de a 2 personas (cantidad máxima de integrantes posible). Para
+más información sobre Git, ver material incluído en el Aula Virtual Metodologías y
+herramientas I/Git.
+Condiciones de aprobación: para aprobar se requiere resolver el trabajo práctico en un
+60% de forma correcta.
+¿Cómo se entrega?
+Cada Docente informará la vía para subir el trabajo. Al momento de la entrega deberán
+informar: link a la web navegable y comentarios que consideren necesarios agregar a la
+entrega.
+Nota: si ya tenés un proyecto comenzado para este curso, podrás usarlo para esta entrega
+agregándole lo que falte para cumplir con los requisitos.
 
 
 
 
 -->
 
+<body class="body-container">
 
-
-<!-- TODO:
-    tabular parrafos 
-
-
--->
-
-
-<body class="wrapper">
-    <header class="header">
-
-        <a name="arriba"></a>
-        <!--Ancla del footer-->
-
-        <div class="top-logo">
-
-            <img src="img/top-logo.png" alt="Main Logo Glory to Arstotzka" id="top-logo" width="50px">
-
+    <header>
+        <div class="header-logo">
+            <img src="img/logo.png" alt="Logo principal Bandera de Arstotzka">
+            <h1>Glory to Arstotzka</h1>
         </div>
 
-        <nav class="nav">
-
+        <nav class="header-nav">
             <ul>
-                <li class="transition"><a href="index.html">Home</a></li>
-                <li class="transition"><a href="posters.html">Posters</a></li>
-                <li class="transition"><a href="mas-buscados.html">Más buscados</a></li>
-                <li class="transition"><a href="denuncie.html">Denuncie</a></li>
-                <li class="transition"><a href="papers-please.html">Papers, Please</a></li>
+                <li class="button"><a href="index.html">Home</a></li>
+                <li class="button"><a href="posters.html">Posters</a></li>
+                <li class="button"><a href="mas-buscados.html">Más buscados</a></li>
+                <li class="button"><a href="denuncias.html">Denuncias</a></li>
+                <li class="button"><a href="papers-please.html">Papers, Please</a></li>
             </ul>
 
-            <!-- prettier BUSCVAR!!!
--->
         </nav>
 
-        <div class="social">
-
-            <a href="https://www.youtube.com/channel/UC0kDm-m1KnI5-Fz2QAkrugA" target="_blank"><i
-                    class="fab fa-youtube"></i></a>
-            <a href="https://ar.pinterest.com/SaquenALosPeronchos/papers-please/" target="_blank"><i
-                    class="fab fa-pinterest-p"></i></a>
-            <a href="https://twitter.com/dukope?lang=es" target="_blank"><i class="fab fa-twitter"></i></a>
-
-        </div>
 
     </header>
 
-    <main class="main">
-        <div class="section-main">
-            <section class="section-a">
+    <!--el id=" ir-arriba" es el Ancla del footer-->
+    <main id="ir-arriba">
 
-                <article class="article">
-                    <h1>Arstotzka</h1>
+
+
+
+
+        <section class="main-articles-container">
+
+            <section class="top-section-container">
+                <article class="article-arstotzka">
+                    <h2>Arstotzka</h2>
                     <img src="img/main-top-left.png" alt="Imagen de propaganda: Gloria a Arstotzka" width=50px>
                     <p> Arstotzka es un país comunista en <a href="papers-please.html">Papers, Please</a>. Su sede de
                         gobierno se encuentra en Paradizna, su ciudad capital.
@@ -138,24 +116,24 @@ FALTA
                         Arstotzka atrae a muchos inmigrantes y trabajadores extranjeros, por lo que el puesto de control
                         fronterizo de Grestin es un lugar "caliente" y es donde toda la acción tiene lugar.
                         <br>
-
                         El gobierno arstotzkiano utiliza la pena capital y el trabajo forzoso como sistema de castigo.
                         Se espera que los arstotzkianos mantengan a sus familias y tengan al menos a un miembro de su
                         familia con vida para continuar el crecimiento del país.
                         <br>
                         El lema del país es "Gloria a Arstotzka".
                     </p>
-
                     <div>
                         <h3> Himno nacional </h3>
                         <audio src="music/Papers_Please_Theme_Song.mp3" controls="muted"></audio>
                     </div>
+                </article>
 
-                    <div>
-                        <img src="img/glory-main.gif" alt="soldado saludando a la bandera de Arstrozka"
-                            id="glory-main-gif" width=50px>
-                    </div>
+                <div class="glory-gif">
 
+                    <!--<img src="img/glory.gif" alt="soldado saludando a la bandera de Arstrozka">-->
+                </div>
+
+                <article class="article-history">
                     <h2>Historia reciente</h2>
                     <!--decorar textos y no traducir y poner marcadores de que es EZIC-->
                     <p>
@@ -181,82 +159,79 @@ FALTA
                 </article>
             </section>
 
-            <section class="section-mg">
-                <secrtion class="section-m">
-                    <article class="article">
-                        <h2>Principales Ministerios</h2>
-                        <div class="img-politics">
-                            <img src="img/politico.PNG" alt="imagen de un político de Arstotzka" width=50px>
-                            <img src="img/control.PNG" alt="imagen de un político de Arstotzka" width=50px>
-                        </div>
+            <section class="section-ministries-geography-conatainer">
 
-                        <div class="ministries">
+                <section class="section-ministries">
+                    <h2>Principales Ministerios</h2>
+                    <div class="img-politics">
+                        <img src="img/politico.PNG" alt="imagen de un político de Arstotzka">
+                        <img src="img/control.PNG" alt="imagen de un político de Arstotzka">
+                    </div>
 
+                    <div>
+                        <h3><span>1</span>Ministerio de Admisión</h3>
+                        <p>
+                            El Ministerio de Admisión está a cargo del control fronterizo. Emite la mayoría
+                            de los documentos oficiales requeridos y también emite citaciones en caso de que un
+                            inspector cometa algun un error.
+                        </p>
 
+                        <h3><span>2</span>Ministerio de Trabajo</h3>
+                        <p>
+                            El Ministerio de Trabajo emite pases de trabajo a los inmigrantes que desean
+                            trabajar en Arstotzka.
+                        </p>
 
+                        <h3><span>3</span>Ministerio de Información</h3>
+                        <p>Realiza auditorías de información sobre empleados gubernamentales y monitorea posibles
+                            amenazas nacionales e internacionales a Arstotzka.
+                        </p>
 
+                        <h3><span>4</span>Ministerio de Salud</h3>
+                        <p>Ministerio a cargo de la salud pública. </p>
 
+                        <h3><span>5</span>Ministerio de Renta</h3>
+                        <p>Encargado de investigar anomalías financieras. Los ciudadanos pueden presentar un
+                            informe si notan un aumento repentino de la riqueza de alguien.</p>
 
-                            <h3>Ministerio de Admisión</h3>
-                            <p>
-                                El Ministerio de Admisión está a cargo del control fronterizo. Emite la mayoría
-                                de los documentos oficiales requeridos y también emite citaciones en caso de que un
-                                inspector cometa algun un error.
-                            </p>
+                        <h3><span>6</span>Ministerio de Comercio</h3>
+                        <p>Ministerio a cargo de producir la moneda de curso legal.</p>
+                    </div>
+                </section>
 
-                            <h3>Ministerio de Trabajo</h3>
-                            <p>
-                                El Ministerio de Trabajo emite pases de trabajo a los inmigrantes que desean
-                                trabajar en Arstotzka.
-                            </p>
+                <section class="section-geography">
 
-                            <h3>Ministerio de Información</h3>
-                            <p>Realiza auditorías de información sobre empleados gubernamentales y monitorea posibles
-                                amenazas nacionales e internacionales a Arstotzka.
-                            </p>
+                    <h2>Geografía</h2>
+                    <div>
+                        <img src="img/mapa.png" alt="mapa de Arstotzka">
+                    </div>
+                    <div>
+                        <p>Geográficamente, Arstotzka bordea con los países de Kolechia y Obristan, y se encuentra
+                            dividido 8
+                            distritos:
+                        </p>
+                        <ul>
+                            <li>Altan</li>
+                            <li>Vescillo</li>
+                            <li>Burnton</li>
+                            <li>Octovalis</li>
+                            <li>Gennistora</li>
+                            <li>Lendiforma</li>
+                            <li>Wozenfield</li>
+                            <li>Fardesto</li>
+                        </ul>
+                    </div>
 
-                            <h3>Ministerio de Salud</h3>
-                            <p>Ministerio a cargo de la salud pública. </p>
-
-                            <h3>Ministerio de Renta</h3>
-                            <p>Encargado de investigar anomalías financieras. Los ciudadanos pueden presentar un
-                                informe si notan un aumento repentino de la riqueza de alguien.</p>
-
-                            <h3>Ministerio de Comercio</h3>
-                            <p>Ministerio a cargo de producir la moneda de curso legal.</p>
-                        </div>
-                    </article>
-                </secrtion>
-                <section class="section-g">
-                    <article class="article">
-                        <h2>Geografía</h2>
-                        <div class="img-map">
-                            <img src="img/mapa.png" alt="mapa de Arstotzka">
-                        </div>
-                        <div class="geography">
-                            <p>Geográficamente, Arstotzka bordea con los países de Kolechia y Obristan, y se encuentra
-                                dividido 8
-                                distritos:
-                            </p>
-                            <ul>
-                                <li>Altan</li>
-                                <li>Vescillo</li>
-                                <li>Burnton</li>
-                                <li>Octovalis</li>
-                                <li>Gennistora</li>
-                                <li>Lendiforma</li>
-                                <li>Wozenfield</li>
-                                <li>Fardesto</li>
-                            </ul>
-                        </div>
-                    </article>
                 </section>
             </section>
-        </div>
-        <aside class="aside">
-            <div class="news">
+        </section>
+
+
+        <aside>
+
+            <section class="aside-news">
                 <h2>Últimas noticias</h2>
-                <img src="img/news/headline.png" alt="tapa de diario, atentado" class="imagenes" width=50px>
+                <img src="img/news/headline.png" alt="tapa de diario, atentado" width=50px>
 
                 <h3>Video exclusivo</h3>
 
@@ -265,20 +240,66 @@ FALTA
                     <figcaption> ADVERTENCIA: Estas imágenes pueden herir la sensibilidad
                     </figcaption>
                 </figure>
-            </div>
-            <div class="buscado">
+            </section>
 
+            <section class="aside-wanted">
                 <h3>Buscado</h3>
                 <a href="mas-buscados.html"><img src="img/news/ezic-buscado.png" alt="imagen del terrorista"
                         width=50px></a>
-
-
-            </div>
+            </section>
         </aside>
+
     </main>
 
     <footer class="footer">
-        <a href="#arriba"><i class="fas fa-arrow-alt-circle-up"></i></a>
+        <div class="ir-arriba">
+        <a href="#rr"><i class="fas fa-chevron-up"></i></a>
+    </div>
+    
+        <!--
+        <a href="#ir-arriba"><i class="fas fa-chevron-up"></i></a>
+-->
+
+<!-- para probrar... borrar al final
+        <div class="social">
+            <ul>
+                <li>
+                    <a href="#d"><i
+                            class="fab fa-youtube social-icon"></i></a>
+                </li>
+                <li>
+                    <a href="#d"><i
+                            class="fab fa-pinterest-p social-icon"></i></a>
+                </li>
+                <li>
+                    <a href="#d"><i
+                            class="fab fa-twitter social-icon"></i></a>
+            </ul>
+                    </div>
+-->
+
+<div class="social">
+            <ul>
+                <li>
+                    <a href="https://www.youtube.com/channel/UC0kDm-m1KnI5-Fz2QAkrugA" target="_blank"><i
+                            class="fab fa-youtube social-icon"></i></a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/dukope?lang=es" target="_blank"><i
+                            class="fab fa-twitter social-icon"></i></a>
+                </li>
+                <li>
+                    <a href="https://ar.pinterest.com/SaquenALosPeronchos/papers-please/" target="_blank"><i
+                            class="fab fa-pinterest-p social-icon"></i></a>
+                </li>
+            </ul>
+        </div>
+
+        <h3 class="final-title">&copy; Power by mF | Martin Frontroth</h3>
+
+
+
+
     </footer>
 </body>
 

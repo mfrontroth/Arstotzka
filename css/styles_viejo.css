@@ -1,16 +1,22 @@
 
 /*
-    Versión de escritorio (base):	940 a 1000 px (mas usada 1366 x 768)
+referencia 
+Versión de escritorio (base):	940 a 1000 px (mas usada 1366 x 768)
     Versión para tabletas	940 a 780 px
     Versión para teléfonos	780 px
+ 
+
+    usado para coincidir con bootstrap
+    Versión de escritorio (base):	> 960 px 
+    Versión para tabletas	720 px a 960 pxpx
+    Versión para teléfonos	< 720px
     */
 
 
 
-
 *{
-    margin: 5px;
-    padding: 5px;
+   /* margin: 10px;
+    padding: 5px;*/
     box-sizing: border-box; /*para que las cajas no se desborden unas con otras*/
     font-family: 'Open Sans', sans-serif;
 }
@@ -48,10 +54,9 @@ img {
     width: 200px;
 }
 
-/**** para el formulario mcon bootstrap ***/
-fieldset {
-    margin: 5px;
-}
+
+
+
 
 /****Envoltorio general****/
 .wrapper {
@@ -85,13 +90,15 @@ fieldset {
             width: 100%;
         }
             .nav ul li {
-                background-color: whitesmoke;
+                background-color: red;
                 display: flex;
                 list-style: none;
+               
              }
                 .nav ul li a {
                     background-color: red; 
                     text-decoration: none;
+                    
                  }
 
     .social {
@@ -177,7 +184,7 @@ fieldset {
 
 
 
-@media all and (max-width: 800px) {
+@media all and (max-width: 960px) {
     .header {
         flex-direction: column;
         height: auto;
@@ -191,11 +198,12 @@ fieldset {
                 
                
             }
-    
+
     .main {
         display: flex;
         flex-flow: column wrap;
     }
+    
         .section-mg {
             display: flex;
             flex-flow: column nowrap;
@@ -212,7 +220,7 @@ fieldset {
             }
 }
 
-@media all and (max-width: 600px) {
+@media all and (max-width: 720px) {
    
     .aside {
         order: -1;
@@ -222,3 +230,91 @@ fieldset {
     }
   }
   
+
+
+  /*********************************************************************************/
+  * {
+    margin: 0px;
+    padding: 0px;
+    
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+
+h1, h2, h3 {
+    font-family: 'Russo One', sans-serif;
+    
+}
+
+body {
+    box-sizing: border-box; /*para que las cajas no se desborden unas con otras*/
+}
+
+
+/**** header ****/
+
+.header{
+    height: 100px;
+    background-color: yellow;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    
+    
+}
+    .header-logo{
+        background-color: red;
+        
+    }
+        .header-logo img{
+            height: 64px;
+            
+            flex: 1 1 auto;
+        }
+
+    .nav{
+        
+        flex: 4 1 auto;
+    }
+        .nav ul{
+            background-color: green;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            width: 100%;        
+            
+        }
+            .nav ul li{
+                background-color: #fff;
+                list-style: none;
+                margin: 0 1.5rem;
+                
+              
+                    
+            }
+                .nav ul li a{
+                    text-decoration: none;
+                
+                        
+                }                
+
+
+    .social{
+        display: flex;
+        flex-wrap: nowrap;
+        flex: 1 1 auto;
+    }
+        .social a{
+            background-color: #000;
+            
+        }
+
+
+.main{
+    padding-top: 100px;;
+}
+/**** CSS GRID ****/

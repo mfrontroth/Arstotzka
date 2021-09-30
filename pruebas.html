@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+body{
+  text-align:center;
+  background-color:#ffcc8e;
+}
+
+.button{
+
+  display:inline-block;
+  margin:20px;
+}
+
+.button a{
+  color:white;
+  font-family:Helvetica, sans-serif;
+  font-weight:bold;
+  font-size:36px;
+  text-align: center;
+  text-decoration:none;
+  background-color:#FFA12B;
+
+  padding:20px 40px;
+  
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  text-shadow: 0px 1px 0px #000;
+  filter: dropshadow(color=#000, offx=0px, offy=1px);
+  
+  -webkit-box-shadow:inset 0 1px 0 #FFE5C4, 0 10px 0 #915100;
+  -moz-box-shadow:inset 0 1px 0 #FFE5C4, 0 10px 0 #915100;
+  box-shadow:inset 0 1px 0 #FFE5C4, 0 10px 0 #915100;
+  
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.button a:active{
+  top:10px;
+  background-color:#F78900;
+  
+  -webkit-box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3px 0 #915100;
+  -moz-box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3pxpx 0 #915100;
+  box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3px 0 #915100;
+}
+
+.button:after{
+  content:"";
+  height:100%;
+  width:100%;
+  padding:4px;
+
+  bottom:-15px;
+  left:-4px;
+  z-index:-1;
+
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+
+/****boxes*****/
+
+.box {
+    height: 100px;
+    width: 100px;
+    border: 1px solid #000;
+    display: flex;
+
+    font-size: xx-large;
+    justify-content: center;
+    align-items: center;
+    color: #d7e6e6;
+}
+
+.container{
+  display: flex;
+}
+
+/*************************************/
+
+
+ul {
+  display: flex;
+  
+
+}
+
+ul li {
+  list-style: none;
+}
+
+ul li a {
+  width: 80px;
+  height: 80px;
+  background-color: #fff;
+  text-align: center;
+  line-height: 80px;
+  font-size: 35px;
+  margin: 0 10px;
+  display: block;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  border: 3px solid #fff;
+  z-index: 1;
+}
+
+ul li a .icon {
+  position: relative;
+  color: #262626;
+  transition: .5s;
+  z-index: 3;
+}
+
+ul li a:hover .icon {
+  color: #fff;
+  transform: rotateY(360deg);
+}
+
+ul li a:before {
+  content: "f";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #f00;
+  transition: .5s;
+  z-index: 2;
+}
+
+ul li a:hover:before {
+  top: 0;
+}
+
+ul li:nth-child(1) a:before{
+  background: #3b5999;
+}
+
+ul li:nth-child(2) a:before{
+  background: #55acee;
+}
+
+ul li:nth-child(3) a:before {
+  background: #0077b5;
+}
+
+ul li:nth-child(4) a:before {
+  background: #dd4b39;
+}
+
+
+
+
+
+    </style>
+</head>
+
+<body>
+    
+    <div ontouchstart="">
+      <div class="button">
+        <a href="#">Mobile First</a>
+      </div>
+    </div>
+
+
+    <br><br><br><br><br><br><br><br><br><br>
+    <div class="container">
+    <div class="box" style="background-color: #ca2d2d">1</div>
+    <div class="box" style="background-color: #d7e6e6; color:#000">2</div>
+    <div class="box" style="background-color: #000000">3</div> 
+    <div class="box" style="background-color: #1c2f22">4</div>
+    <div class="box" style="background-color: #383c3c">5</div>
+    <div class="box" style="background-color: #300e0c">6</div>
+    <div class="box" style="background-color: #F78900">7</div>
+    <div class="box" style="background-color: #915100">8</div>
+
+    <div class="box" style="background-color: #888888">9</div>
+    <div class="box" style="background-color: #1c2f22">10</div>
+    <div class="box" style="background-color: #915100">11</div>
+    <div class="box" style="background-color: #00ffff">12</div>
+  </div>
+
+
+
+  <br><br><br><br><br><br><br><br><br><br>
+  
+<ul>
+  <li>
+    <a href="#">
+      <i class="fab fa-facebook-f icon"></i>    </a>
+  </li>
+  <li>
+    <a href="#"><i class="fab fa-twitter icon"></i></a>
+  </li>
+  <li>
+    <a href="#"><i class="fab fa-linkedin-in icon"></i></a></li>
+  <li>
+    <a href="#"><i class="fab fa-google-plus-g icon"></i></a></li>
+</ul>
+</body>
+
+</html>

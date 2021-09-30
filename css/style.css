@@ -1,0 +1,294 @@
+/**** Notas adicionales de estilos ****/
+/*
+Font family
+    Para el cuerpo: font-family: 'Open Sans', sans-serif;
+    Para los encabezados: font-family: 'Russo One', sans-serif;
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h2{
+    font-family: 'Russo One', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    margin: 20px;
+    text-transform: uppercase;
+    background-color: thistle;
+}
+
+h3{
+    font-family: 'Russo One', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin: 20px;
+    text-transform: uppercase;
+    background-color: green;
+}
+
+
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    width: 95%;
+    max-width: 1600px;
+    margin: auto;
+    background-color: #000000;
+    
+
+}
+/*
+.main-articles-container{
+    padding: 60px 0;
+    
+}
+*/
+
+/**** header ****/
+header{
+    background-color: #000000;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Russo One', sans-serif;
+    text-transform: uppercase;
+}
+
+    .header-logo{
+        display: flex;
+        flex-direction: column;
+        margin: 5px 0;
+       /* border: 1px solid black;*/
+        justify-content: center;
+        align-items: center;
+    }
+        .header-logo img{
+            width: 100px;
+            margin-bottom: 5px;
+        }
+            .header-logo h1{
+                color: #ca2d2d;
+                letter-spacing: 2px;
+                word-spacing: 3px;
+                font-size: 3em;
+                display:inline-block;
+            }
+
+
+    .header-nav{
+        width: 60%;
+        margin-bottom: 5px;
+        /*background-color: green;*/
+      /*  border: 1px solid black;*/
+    }
+        .header-nav ul {       
+            display: flex;
+            flex-wrap: wrap;
+            
+            list-style: none;
+            justify-content: space-around;
+        }
+        
+/**** botones con transiciones ****/
+
+            .button {
+                display:inline-block; 
+                border-radius: 10px;
+                box-shadow: 0 5px 0 #ca2d2d;
+                background-color:#1c2f22;
+                cursor: pointer;
+                padding: 12px 20px;
+                margin-bottom: 10px;
+                transition: all .1s linear;
+            }
+                .button a{
+                    color:#d7e6e6;
+                    font-size: 1rem;
+                    text-align: center;
+                    text-decoration: none; 
+                }
+                 /* El usuario esta sobre el enlace */
+                    .button:hover {
+                        box-shadow: 0 5px 0 #ca2d2d;
+                        background-color:#d7e6e6;
+                    } 
+                    .button:hover a{           
+                        color: #ca2d2d;
+                    } 
+
+                /* Enlaces activos */
+                    .button:active {
+                        background-color: #00ffff;
+                        box-shadow: 0 2px 0 #ca2d2d;
+                        transform: translateY(3px);
+                    } 
+
+
+
+
+
+
+
+
+/**** main ****/
+
+main{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+    .main-articles-container{
+        border: 5px solid red;
+        display: flex;
+        flex-direction: column;
+    }
+
+        .top-section-container{
+            background-color: gold;
+            
+        }
+            .article-arstotzka{
+                background-color: firebrick;
+                
+            }
+            .glory-gif {
+                background-image: url("../img/glory.gif");
+                width: 100%;
+                padding-top: 62.5%; /* 8:5 Aspect Ratio */
+                
+                background-repeat: no-repeat; /*No se repetirá*/
+                background-size: cover; /* Imagen al 100% del ancho */
+                background-attachment: fixed; /*Posicion fija para la imagen*/
+                /*position: relative;*/
+            }
+            .article-history{
+                background-color: green;
+                    border: 5px solid blueviolet; 
+            }
+
+        .section-ministries-geography-conatainer{
+                background-color: firebrick;
+                border: 5px solid grey; 
+                display: flex;
+        }    
+            .section-ministries{
+                background-color: green;
+                border: 5px solid blueviolet; 
+                flex: 2 1 auto;
+            }
+                .section-ministries img{
+                    width: 100px;
+                }
+            .section-geography{
+                background-color: gold;
+                border: 5px solid blue; 
+                flex: 1 1 auto;
+            }
+                .section-geography img{
+                    width: 300px;
+                }
+
+    aside {
+        /*background-color:#383c3c;*/
+        background-color: green;
+        border: 5px solid blue; 
+    }
+        .aside-news{
+            background-color: firebrick;
+            border: 5px solid grey; 
+        }
+        .aside-wanted{
+            background-color: greenyellow;
+            border: 5px solid red;
+        }
+
+/**** footer ****/
+
+footer {
+    /*background-color: #300e0c;*/
+    background-color: gold;
+    border: 5px solid blue; 
+}
+
+/**** ir arriba ***/
+.ir-arriba a{
+    width: 20%;
+    color: #d7e6e6;
+    background-color: #c8232c;
+    font-size: 30px;
+    margin: 0 10px;
+    display: inline-block;
+    border-radius: 10px;
+
+    border: 3px solid #000000;
+    z-index: 1;
+    text-align: center;
+}
+    /* El usuario esta sobre el enlace */
+    .ir-arriba a:hover {
+    color: #c8232c;
+    background-color: #d7e6e6;
+    }
+        /* Enlaces activos */
+        .ir-arriba a:active {
+        color: #00acee;
+        background-color: gold;
+        }        
+            
+
+/****** socials ******/
+.social ul {
+    display: flex;
+  }
+    .social ul li {
+        list-style: none;
+    }
+        .social ul li a {
+            width: 40px;
+            height: 40px;
+            background-color: #d7e6e6;
+            font-size: 25px;
+            margin: 0 10px;
+            display: block;
+            border-radius: 50%;
+            position: relative;
+            overflow: hidden;
+            border: 3px solid #000000;
+            z-index: 1;
+            text-align: center;
+        }
+        .fa-youtube {
+            color: #c4302b;
+        }
+        .fa-pinterest-p {
+            color: #c8232c;
+        }
+        .fa-twitter {
+            color: #00acee;
+        }
+
+            /* El usuario esta sobre el enlace */
+            .social ul li a:before {
+                content: "";
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                transition: .5s;
+                z-index: -2; 
+                background-color: #000000;        
+            }                    
+                .social ul li a:hover:before {
+                    top: 0;
+                }
+                
+            /* Enlaces activos */
+            .social ul li .fab:active{
+                color: #d7e6e6;          
+            }
+     

@@ -5,6 +5,9 @@ Font family
     Para los encabezados: font-family: 'Russo One', sans-serif;
 */
 
+
+/*color textocolor: #d7e6e6*/
+
 * {
     margin: 0;
     padding: 0;
@@ -17,7 +20,7 @@ h2{
     text-align: center;
     margin: 20px;
     text-transform: uppercase;
-    background-color: thistle;
+    background-color: blue;
 }
 
 h3{
@@ -31,14 +34,13 @@ h3{
 
 
 
-body{
+.body-index{
     font-family: 'Open Sans', sans-serif;
     width: 95%;
     max-width: 1600px;
     margin: auto;
     background-color: #000000;
-    
-
+    color:#d7e6e6;
 }
 /*
 .main-articles-container{
@@ -62,7 +64,7 @@ header{
         display: flex;
         flex-direction: column;
         margin: 5px 0;
-       /* border: 1px solid black;*/
+       /* border: 1px solid green; */
         justify-content: center;
         align-items: center;
     }
@@ -81,14 +83,13 @@ header{
 
     .header-nav{
         width: 60%;
-        margin-bottom: 5px;
+        margin-bottom: 10px;
         /*background-color: green;*/
-      /*  border: 1px solid black;*/
+      /*  border: 1px solid red;*/
     }
         .header-nav ul {       
             display: flex;
             flex-wrap: wrap;
-            
             list-style: none;
             justify-content: space-around;
         }
@@ -98,9 +99,8 @@ header{
             .button {
                 display:inline-block; 
                 border-radius: 10px;
-                box-shadow: 0 5px 0 #ca2d2d;
                 background-color:#1c2f22;
-                cursor: pointer;
+                box-shadow: 0 5px 0 #ca2d2d;
                 padding: 12px 20px;
                 margin-bottom: 10px;
                 transition: all .1s linear;
@@ -113,7 +113,6 @@ header{
                 }
                  /* El usuario esta sobre el enlace */
                     .button:hover {
-                        box-shadow: 0 5px 0 #ca2d2d;
                         background-color:#d7e6e6;
                     } 
                     .button:hover a{           
@@ -121,8 +120,7 @@ header{
                     } 
 
                 /* Enlaces activos */
-                    .button:active {
-                        background-color: #00ffff;
+                    .button:active {        
                         box-shadow: 0 2px 0 #ca2d2d;
                         transform: translateY(3px);
                     } 
@@ -206,89 +204,166 @@ main{
             border: 5px solid red;
         }
 
-/**** footer ****/
+/********************** footer **********************/
 
 footer {
     /*background-color: #300e0c;*/
-    background-color: gold;
+    background-color: #000;
     border: 5px solid blue; 
-}
-
-/**** ir arriba ***/
-.ir-arriba a{
-    width: 20%;
-    color: #d7e6e6;
-    background-color: #c8232c;
-    font-size: 30px;
-    margin: 0 10px;
-    display: inline-block;
-    border-radius: 10px;
-
-    border: 3px solid #000000;
-    z-index: 1;
-    text-align: center;
-}
-    /* El usuario esta sobre el enlace */
-    .ir-arriba a:hover {
-    color: #c8232c;
-    background-color: #d7e6e6;
-    }
-        /* Enlaces activos */
-        .ir-arriba a:active {
-        color: #00acee;
-        background-color: gold;
-        }        
-            
-
-/****** socials ******/
-.social ul {
     display: flex;
-  }
-    .social ul li {
+    flex-direction: column;
+    padding: 10px;;
+    
+}
+/**** Iconos del footer ****/
+.iconos{
+    display: flex;
+    /* border: 1px solid white; */
+    justify-content: space-between;
+    align-items: center;
+}
+
+/**** Icono IR ARRIBA ****/
+.ir-arriba a{
+    font-size: 30px;
+    color:#d7e6e6;
+    background-color: #1c2f22;
+    text-decoration: none;
+    padding: 5px;
+    width: 300px;
+    border-radius: 10px;
+    border: 3px solid #d7e6e6;
+    display: flex;
+    justify-content: center;
+}
+    .ir-arriba a:hover{
+        border: 3px solid #FFD700;
+        color: #FFD700;
+    }
+
+    .ir-arriba a:active{
+        color:#ca2d2d;
+        background-color: #d7e6e6;
+        border: 3px solid #ca2d2d;
+        transform: scale(.8);
+    }
+
+
+
+/****** Iconos SOCIAL MEDIA ******/
+.social ul{
+    display: flex;
+}
+    .social ul li{
         list-style: none;
     }
-        .social ul li a {
+        .social ul li a{
+            font-size: 20px;
+            margin: 0 10px;
+            /* background-color: #d7e6e6; */
+            color: inherit;
+            border-radius: 50%;
+            border: 3px solid #d7e6e6;
             width: 40px;
             height: 40px;
-            background-color: #d7e6e6;
-            font-size: 25px;
-            margin: 0 10px;
-            display: block;
-            border-radius: 50%;
-            position: relative;
-            overflow: hidden;
-            border: 3px solid #000000;
-            z-index: 1;
-            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
         }
-        .fa-youtube {
-            color: #c4302b;
+        .fa-linkedin{
+            color: #0e76a8;
         }
-        .fa-pinterest-p {
-            color: #c8232c;
+        .fa-youtube{
+            color:#c4302b;
         }
-        .fa-twitter {
+        .fa-twitter{
             color: #00acee;
         }
+        .fa-pinterest-p{
+        color: #c8232c;
+        }
 
-            /* El usuario esta sobre el enlace */
-            .social ul li a:before {
-                content: "";
-                position: absolute;
-                top: 100%;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                transition: .5s;
-                z-index: -2; 
-                background-color: #000000;        
-            }                    
-                .social ul li a:hover:before {
-                    top: 0;
-                }
-                
-            /* Enlaces activos */
-            .social ul li .fab:active{
-                color: #d7e6e6;          
-            }
-     
+        /* El usuario esta sobre el enlace */
+        .social ul li a:hover{ 
+            background-color: #d7e6e6;
+        }
+
+        /* Enlaces activos */    
+        .social ul li a:active{ 
+            transform: scale(.8);
+        }
+
+        /* páginas visitadas */
+        .social ul li a:hover{ 
+            background-color: #FFD700;
+        }
+
+
+
+
+/**** titulo final neón ****/
+.final-title-neon{
+    font-family: 'Russo One', sans-serif;
+    text-align: center;
+    letter-spacing: 1px;
+    margin: 5px;
+    animation: flicker 1.5s infinite alternate;
+}
+    /* Flickering animation */
+    @keyframes flicker {
+        
+        0%, 18%, 22%, 25%, 53%, 57%, 100% {
+            text-shadow:
+            0 0 4px #d7e6e6,
+            0 0 11px #d7e6e6,
+            0 0 19px #d7e6e6,
+            0 0 40px #01c4e7,
+            0 0 80px #01c4e7,
+            0 0 90px #01c4e7,
+            0 0 100px #01c4e7,
+            0 0 150px #01c4e7
+        }
+        
+        20%, 24%, 55% {        
+            text-shadow: none;
+        }    
+    }
+
+
+
+/**** página BUSCADOS ***/
+
+
+.buscados-main {
+    display: flex;
+    flex-direction: column;
+}
+
+table {
+    width: 100%;
+    border: 5px double #246163;
+    border-collapse: collapse;
+    background-color: #14323a;
+}
+th, td{
+    border-bottom: 2px solid #246163;
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px 0;
+}
+
+
+
+
+#buscados-table > tbody > .tr-title > td:nth-child(odd){
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: end;
+}
+
+#buscados-table > tbody > .tr-title > td:nth-child(even):hover{
+color: #BE0000;
+background-color: #FAEEE0;
+
+}

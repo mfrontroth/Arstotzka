@@ -10,20 +10,18 @@
     <!--falvicon: 16x16 y 32x32-->
     <link rel="icon" href="img/glory.ico" sizes="16x16 32x32">
 
-    <!--Iconos (Font Awesome): Usado para los socials media-->
+    <!--Iconos (Font Awesome)-->
     <script src="https://kit.fontawesome.com/2e4437d396.js" crossorigin="anonymous"></script>
 
-    <!--Font family-->
-    <!--      font-family: 'Open Sans', sans-serif;-> para cuerpo
-        font-family: 'Russo One', sans-serif;-> para títulos
-        -->
+    <!-- Google Fonts-->
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,400&family=Russo+One&display=swap"
         rel="stylesheet">
 
-    <!--Hoja de Estilos-->
+    <!--Style Sheets-->
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
@@ -33,21 +31,37 @@ Fecha límite de entrega: semana del 25/10 al 29/10.
 ¿Qué hay que entregar?
 El TPO deberá cumplir con los siguientes requisitos:
 ● Poseer al menos 3 páginas html, siendo su temática libre.
-ok
+OK. Se realizan 5 páginas html.
 
 ● Utilizar etiquetas semánticas para estructurar el sitio de forma correcta.
-revisar
+FALTA REVISAR
 
 ● Contener un formulario de contacto con validación realizada mediante Javascript.
-falta
+FALTA TERMINAR. El formulario se encuentra en la página DENUNCIAS.
 
 ● Utilizar iframes, íconos de FontAwesome, y fuentes locales o bien de Google Fonts.
+● iframes -> ver página BUSCADOS, "puesto de control fronterizo"
+● íconos de FontAwesome -> Utilizados para los socials media
+● fuentes locales o bien de Google Fonts -> Se utilizan de Google Fonts:
+        font-family: 'Open Sans', sans-serif;-> para cuerpo
+        font-family: 'Russo One', sans-serif;-> para títulos
+
+
 ● Tener una página totalmente responsive con 3 puntos de corte para 3 tamaños de
 dispositivos (PC escritorio, Tablet, Celular).
+FALTA
+
 ● Utilizar al menos una animación, transformación o una transición (indicar dónde fue
 incorporada la animación).
+Se utilizan en los botones del header y del footer
+
+
 ● Poseer una estructura HTML maquetada con Flexbox y/o Grid.
+
+
 ● Sólo podrá utilizar Bootstrap en la página del formulario del sitio web.
+
+
 ● La página deberá subirse a un servidor on-line para poder ser navegada por el
 Docente. Ejemplo: Netlify o similar.
 ● Además de los aspectos técnicos ya mencionados, el proyecto deberá contemplar
@@ -71,30 +85,24 @@ Nota: si ya tenés un proyecto comenzado para este curso, podrás usarlo para es
 agregándole lo que falte para cumplir con los requisitos.
 
 
-
-
 -->
 
-<body class="body-container">
+<body class="body-index">
 
     <header>
         <div class="header-logo">
-            <img src="img/logo.png" alt="Logo principal Bandera de Arstotzka">
+            <img src="img/logo.png" alt="Logo Bandera de Arstotzka">
             <h1>Glory to Arstotzka</h1>
         </div>
-
         <nav class="header-nav">
             <ul>
                 <li class="button"><a href="index.html">Home</a></li>
                 <li class="button"><a href="posters.html">Posters</a></li>
-                <li class="button"><a href="mas-buscados.html">Más buscados</a></li>
+                <li class="button"><a href="buscados.html">Buscados</a></li>
                 <li class="button"><a href="denuncias.html">Denuncias</a></li>
                 <li class="button"><a href="papers-please.html">Papers, Please</a></li>
             </ul>
-
         </nav>
-
-
     </header>
 
     <!--el id=" ir-arriba" es el Ancla del footer-->
@@ -252,50 +260,35 @@ agregándole lo que falte para cumplir con los requisitos.
     </main>
 
     <footer class="footer">
-        <div class="ir-arriba">
-        <a href="#rr"><i class="fas fa-chevron-up"></i></a>
-    </div>
-    
-        <!--
-        <a href="#ir-arriba"><i class="fas fa-chevron-up"></i></a>
--->
+        <div class="iconos">
+            <div class="ir-arriba">
+                <a href="#ir-arriba"><i class="fas fa-chevron-up"></i></a>
+            </div>
 
-<!-- para probrar... borrar al final
-        <div class="social">
-            <ul>
-                <li>
-                    <a href="#d"><i
-                            class="fab fa-youtube social-icon"></i></a>
-                </li>
-                <li>
-                    <a href="#d"><i
-                            class="fab fa-pinterest-p social-icon"></i></a>
-                </li>
-                <li>
-                    <a href="#d"><i
-                            class="fab fa-twitter social-icon"></i></a>
-            </ul>
-                    </div>
--->
+            <div class="social">
+                <ul>
+                    <li>
+                        <a href="https://www.linkedin.com/in/martin-frontroth-5b732a69/" target="_blank"><i
+                                class="fab fa-linkedin"></i></a>
+                    </li>
+                    <li>
+                        <a href="##"><i class="fab fa-youtube"></i></a>
+                    </li>
+                    <li>
+                        <a href="##"><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="##"><i class="fab fa-pinterest-p"></i></a>
+                    </li>
 
-<div class="social">
-            <ul>
-                <li>
-                    <a href="https://www.youtube.com/channel/UC0kDm-m1KnI5-Fz2QAkrugA" target="_blank"><i
-                            class="fab fa-youtube social-icon"></i></a>
-                </li>
-                <li>
-                    <a href="https://twitter.com/dukope?lang=es" target="_blank"><i
-                            class="fab fa-twitter social-icon"></i></a>
-                </li>
-                <li>
-                    <a href="https://ar.pinterest.com/SaquenALosPeronchos/papers-please/" target="_blank"><i
-                            class="fab fa-pinterest-p social-icon"></i></a>
-                </li>
-            </ul>
+                </ul>
+            </div>
+
         </div>
 
-        <h3 class="final-title">&copy; Power by mF | Martin Frontroth</h3>
+        <div>
+            <h4 class="final-title-neon">&copy; Power by mF | Martin Frontroth</h4>
+        </div>
 
 
 

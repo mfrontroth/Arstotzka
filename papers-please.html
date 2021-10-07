@@ -5,34 +5,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+    <!--falvicon: 16x16 y 32x32-->
+    <link rel="icon" href="img/glory.ico" sizes="16x16 32x32">
 
-     <!--falvicon: 16x16 y 32x32-->
-     <link rel="icon" href="img/glory.ico" sizes="16x16 32x32">
+    <!--Iconos (Font Awesome)-->
+    <script src="https://kit.fontawesome.com/2e4437d396.js" crossorigin="anonymous"></script>
 
-     <!--Iconos (Font Awesome): Usado para los socials media-->
-     <script src="https://kit.fontawesome.com/2e4437d396.js" crossorigin="anonymous"></script>
- 
-     <!--Font family-->
-     <!--      font-family: 'Open Sans', sans-serif;-> para cuerpo
-         font-family: 'Russo One', sans-serif;-> para títulos
-         -->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link
-         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,400&family=Russo+One&display=swap"
-         rel="stylesheet">
- 
-     <!--Hoja de Estilos-->
-     <link rel="stylesheet" type="text/css" href="css/style.css">
- 
+    <!-- Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,400&family=Russo+One&display=swap"
+        rel="stylesheet">
+
+    <!--Style Sheets-->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
 
     <title>Papers, please</title>
 </head>
 
 <body>
-    <header>
+
+    <header id="ir-arriba">
         <div class="header-logo">
-            <img src="img/logo.png" alt="Logo Bandera de Arstotzka">
+            <img src="img/logo.png" alt="Logo bandera de Arstotzka">
             <h1>Glory to Arstotzka</h1>
         </div>
         <nav class="header-nav">
@@ -46,9 +44,11 @@
         </nav>
     </header>
 
-    <main class="main">
-        <section>
-            <h1 translate="no">Papers, Please</h1>
+    
+    <main>
+
+        <section class="papers-please-resumen">
+            <h2 translate="no">Papers, Please</h2>
             <!--que no se traduzca papers please-->
             <p>
                 <span translate="no">Papers, Please</span> es un juego que tiene lugar en 1982.
@@ -78,52 +78,67 @@
                 por las decisiones e interacciones diarias realizadas por el jugador.
             </p>
         </section>
-        <hr>
-        <section>
+
+        <section class="papers-please-imagen-juego">
             <h2>Imágenes del juego</h2>
             <ul>
-                <li><img src="img/timeline/day (1).png" alt="Imagen del juego" width="200"></li>
-                <li><img src="img/timeline/day (2).png" alt="Imagen del juego" width="200"></li>
-                <li><img src="img/timeline/day (3).png" alt="Imagen del juego" width="200"></li>
-                <li><img src="img/timeline/day (4).png" alt="Imagen del juego" width="200"></li>
-                <li><img src="img/timeline/day (5).png" alt="Imagen del juego" width="200"></li>
-                <li><img src="img/timeline/day (6).png" alt="Imagen del juego" width="200"></li>
+                <li><img src="img/timeline/timeline (1).png" alt="Imagen 2 del juego"></li>
+                <li><img src="img/timeline/timeline (2).png" alt="Imagen 1 del juego"></li>
+                <li><img src="img/timeline/timeline (3).png" alt="Imagen 3 del juego"></li>
+                <li><img src="img/timeline/timeline (4).png" alt="Imagen 4 del juego"></li>
             </ul>
         </section>
-        <hr>
-        <section>
+
+        <section class="papers-please-origen">
             <h2>Origen</h2>
-            <p> <span translate="no">Papers, Please</span> fue desarrollado por Lucas Pope en noviembre del 2012,
-                trabajando con el lenguaje de programación Haxe y NME framework, siendo ambas aplicaciones de código
-                abierto.​
-                <br>
-                Lucas Pope es un inmigrante estadounidense que vive en Japón, y como tal, ha tenido que lidiar con
-                asuntos migratorios en sus viajes. Este pensó que sus experiencias migratorias (descritas por el mismo
-                como "tensas") podían materializarse en un juego. Antes del lanzamiento del juego, Pope difundió un
-                formulario para el público, donde la gente podía poner sus nombres; estos nombres posteriormente se
-                asignaron de forma aleatoria a los inmigrantes del juego. 
-                <br>
-                <span translate="no">Papers, Please</span> fue
-                presentado a Greenlight Steam el 11 de abril de 2013, dándole luz verde el 1 de mayo.
-            </p>
             <div>
-                <img src="img/timeline/lucas pope/grotzky.jpg" alt="personaje del juego señalando a Lucas Pope"
-                    width="200">
+                <p> <span translate="no">Papers, Please</span> fue desarrollado por Lucas Pope en noviembre del 2012,
+                    trabajando con el lenguaje de programación Haxe y NME framework, siendo ambas aplicaciones de código
+                    abierto.​
+                    <br>
+                    Lucas Pope es un inmigrante estadounidense que vive en Japón, y como tal, ha tenido que lidiar con
+                    asuntos migratorios en sus viajes. Este pensó que sus experiencias migratorias (descritas por el
+                    mismo
+                    como "tensas") podían materializarse en un juego. Antes del lanzamiento del juego, Pope difundió un
+                    formulario para el público, donde la gente podía poner sus nombres; estos nombres posteriormente se
+                    asignaron de forma aleatoria a los inmigrantes del juego.
+                    <br>
+                    <span translate="no">Papers, Please</span> fue
+                    presentado a Greenlight Steam el 11 de abril de 2013, dándole luz verde el 1 de mayo.
+                </p>
             </div>
-            <div>
-                <img src="img/timeline/lucas pope/lucas-Pope.png" alt="foto de lucas pope" width="200">
-            </div>
+            <img src="img/timeline/lucas pope/grotzky.jpg" alt="personaje del juego">
+            <a href="https://papersplea.se/" target="_blank"><img src="img/timeline/lucas pope/lucas-Pope.png"
+                    alt="foto de Lucas Pope"></a>
         </section>
 
-
-        <div>
-            <a href="https://papersplea.se/" target="_blank"> <span translate="no">Página oficial</span></a>
-        </div>
     </main>
 
-    <footer>
-        <!--falta-->
+    <footer class="footer">
+        <div class="iconos">
+            <div class="button arriba">
+                <a href="#ir-arriba"><i class="fas fa-chevron-up"></i></a>
+            </div>
+            <div class="social">
+                <ul>
+                    <li>
+                        <a href="https://www.linkedin.com/in/martin-frontroth-5b732a69/" target="_blank"><i
+                                class="fab fa-linkedin"></i></a>
+                    </li>
+                    <li>
+                        <a href="##"><i class="fab fa-youtube"></i></a>
+                    </li>
+                    <li>
+                        <a href="##"><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="##"><i class="fab fa-pinterest-p"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <h4 class="final-title-neon">&copy; Power by mF | Martin Frontroth</h4>
     </footer>
-
 </body>
+
 </html>

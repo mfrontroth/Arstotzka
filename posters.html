@@ -5,40 +5,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+ 
     <!--falvicon: 16x16 y 32x32-->
     <link rel="icon" href="img/glory.ico" sizes="16x16 32x32">
 
-    <!--Iconos (Font Awesome): Usado para los socials media-->
+    <!--Iconos (Font Awesome)-->
     <script src="https://kit.fontawesome.com/2e4437d396.js" crossorigin="anonymous"></script>
 
-    <!--Font family-->
-    <!--      font-family: 'Open Sans', sans-serif;-> para cuerpo
-        font-family: 'Russo One', sans-serif;-> para títulos
-        -->
+    <!-- Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,400&family=Russo+One&display=swap"
         rel="stylesheet">
 
-    <!--Hoja de Estilos-->
+    <!--Style Sheets-->
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
-    <style>
-    img{
-        box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-    }
-    </style>
 
     <title>Posters</title>
 </head>
 
-<body style= "background-color: white">
+<body>
 
-    <header>
+    <header id="ir-arriba">
         <div class="header-logo">
-            <img src="img/logo.png" alt="Logo Bandera de Arstotzka">
+            <img src="img/logo.png" alt="Logo bandera de Arstotzka">
             <h1>Glory to Arstotzka</h1>
         </div>
         <nav class="header-nav">
@@ -52,26 +44,42 @@
         </nav>
     </header>
 
-    <main>
-        <section>
-            <h1>Mejores Posters</h1>
-            <ul>
-                <li><img src="img/posters/poster (1).PNG" alt="imagen de poster" width="200"></li>
-                <li><img src="img/posters/poster (2).PNG" alt="imagen de poster" width="200"></li>
-                <li><img src="img/posters/poster (3).PNG" alt="imagen de poster" width="200"></li>
-                <li><img src="img/posters/poster (4).PNG" alt="imagen de poster" width="200"></li>
-                <li><img src="img/posters/poster (5).PNG" alt="imagen de poster" width="200"></li>
-                <li><img src="img/posters/poster (6).PNG" alt="imagen de poster" width="200"></li>
-                <li><img src="img/posters/poster (7).PNG" alt="imagen de poster" width="200"></li>
-                <li><img src="img/posters/poster (8).PNG" alt="imagen de poster" width="200"></li>
-            </ul>
-        </section>
+    <main class="grid-posters">
+            <div id="imagen-1"><img src="img/posters/poster (1).png" alt="imagen 1 de poster"></div>
+            <div id="imagen-2"><img src="img/posters/poster (2).png" alt="imagen 2 de poster"></div>
+            <div id="imagen-3"><img src="img/posters/poster (3).png" alt="imagen 3 de poster"></div>
+            <div id="imagen-4"><img src="img/posters/poster (4).png" alt="imagen 4 de poster"></div>
+            <div id="imagen-5"><img src="img/posters/poster (5).png" alt="imagen 5 de poster"></div>
+            <div id="imagen-6"><img src="img/posters/poster (6).png" alt="imagen 6 de poster"></div>
+            <div id="imagen-7"><img src="img/posters/poster (7).png" alt="imagen 7 de poster"></div>
+            <div id="imagen-8"><img src="img/posters/poster (8).png" alt="imagen 8 de poster"></div>
     </main>
 </body>
 
-<footer>
-    <!--falta-->
-
+<footer class="footer">
+    <div class="iconos">
+        <div class="button arriba">
+            <a href="#ir-arriba"><i class="fas fa-chevron-up"></i></a>
+        </div>
+        <div class="social">
+            <ul>
+                <li>
+                    <a href="https://www.linkedin.com/in/martin-frontroth-5b732a69/" target="_blank"><i
+                            class="fab fa-linkedin"></i></a>
+                </li>
+                <li>
+                    <a href="##"><i class="fab fa-youtube"></i></a>
+                </li>
+                <li>
+                    <a href="##"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li>
+                    <a href="##"><i class="fab fa-pinterest-p"></i></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <h4 class="final-title-neon">&copy; Power by mF | Martin Frontroth</h4>
 </footer>
 
 </html>

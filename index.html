@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Glory to Arstotzka</title>
-
+ 
     <!--falvicon: 16x16 y 32x32-->
     <link rel="icon" href="img/glory.ico" sizes="16x16 32x32">
 
@@ -14,7 +13,6 @@
     <script src="https://kit.fontawesome.com/2e4437d396.js" crossorigin="anonymous"></script>
 
     <!-- Google Fonts-->
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -23,6 +21,8 @@
 
     <!--Style Sheets-->
     <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <title>Glory to Arstotzka</title>
 </head>
 
 <!--El TPO deberá cumplir con los siguientes requisitos:
@@ -87,11 +87,11 @@ agregándole lo que falte para cumplir con los requisitos.
 
 -->
 
-<body class="body-index">
+<body>
 
-    <header>
+    <header id="ir-arriba">
         <div class="header-logo">
-            <img src="img/logo.png" alt="Logo Bandera de Arstotzka">
+            <img src="img/logo.png" alt="Logo bandera de Arstotzka">
             <h1>Glory to Arstotzka</h1>
         </div>
         <nav class="header-nav">
@@ -105,19 +105,13 @@ agregándole lo que falte para cumplir con los requisitos.
         </nav>
     </header>
 
-    <!--el id=" ir-arriba" es el Ancla del footer-->
-    <main id="ir-arriba">
-
-
-
-
-
+    <main class="index-main">
         <section class="main-articles-container">
 
             <section class="top-section-container">
                 <article class="article-arstotzka">
                     <h2>Arstotzka</h2>
-                    <img src="img/main-top-left.png" alt="Imagen de propaganda: Gloria a Arstotzka" width=50px>
+                    <img src="img/main-top-left.png" alt="Imagen de propaganda: Gloria a Arstotzka">
                     <p> Arstotzka es un país comunista en <a href="papers-please.html">Papers, Please</a>. Su sede de
                         gobierno se encuentra en Paradizna, su ciudad capital.
                         <br>
@@ -137,8 +131,7 @@ agregándole lo que falte para cumplir con los requisitos.
                 </article>
 
                 <div class="glory-gif">
-
-                    <!--<img src="img/glory.gif" alt="soldado saludando a la bandera de Arstrozka">-->
+                    <!--espacio para colodar gif de fondo-->
                 </div>
 
                 <article class="article-history">
@@ -162,7 +155,7 @@ agregándole lo que falte para cumplir con los requisitos.
                         arrestos y fusilamientos.
                     </p>
                     <div>
-                        <img src="img/cartel-atencion.png" alt="cartel de atencion" width=50px>
+                        <img src="img/cartel-atencion.png" alt="cartel de atencion">
                     </div>
                 </article>
             </section>
@@ -171,38 +164,38 @@ agregándole lo que falte para cumplir con los requisitos.
 
                 <section class="section-ministries">
                     <h2>Principales Ministerios</h2>
-                    <div class="img-politics">
-                        <img src="img/politico.PNG" alt="imagen de un político de Arstotzka">
-                        <img src="img/control.PNG" alt="imagen de un político de Arstotzka">
-                    </div>
+
+                    <img src="img/politico.PNG" alt="imagen de un político de mayor rango" class="politico-der">
+                    <img src="img/control.PNG" alt="imagen de un político de menor rango" class="politico-izq">
+
 
                     <div>
-                        <h3><span>1</span>Ministerio de Admisión</h3>
+                        <h3><span>1</span> Ministerio de Admisión</h3>
                         <p>
                             El Ministerio de Admisión está a cargo del control fronterizo. Emite la mayoría
                             de los documentos oficiales requeridos y también emite citaciones en caso de que un
                             inspector cometa algun un error.
                         </p>
 
-                        <h3><span>2</span>Ministerio de Trabajo</h3>
+                        <h3><span>2</span> Ministerio de Trabajo</h3>
                         <p>
                             El Ministerio de Trabajo emite pases de trabajo a los inmigrantes que desean
                             trabajar en Arstotzka.
                         </p>
 
-                        <h3><span>3</span>Ministerio de Información</h3>
+                        <h3><span>3</span> Ministerio de Información</h3>
                         <p>Realiza auditorías de información sobre empleados gubernamentales y monitorea posibles
                             amenazas nacionales e internacionales a Arstotzka.
                         </p>
 
-                        <h3><span>4</span>Ministerio de Salud</h3>
+                        <h3><span>4</span> Ministerio de Salud</h3>
                         <p>Ministerio a cargo de la salud pública. </p>
 
-                        <h3><span>5</span>Ministerio de Renta</h3>
+                        <h3><span>5</span> Ministerio de Renta</h3>
                         <p>Encargado de investigar anomalías financieras. Los ciudadanos pueden presentar un
                             informe si notan un aumento repentino de la riqueza de alguien.</p>
 
-                        <h3><span>6</span>Ministerio de Comercio</h3>
+                        <h3><span>6</span> Ministerio de Comercio</h3>
                         <p>Ministerio a cargo de producir la moneda de curso legal.</p>
                     </div>
                 </section>
@@ -235,16 +228,16 @@ agregándole lo que falte para cumplir con los requisitos.
         </section>
 
 
-        <aside>
+        <aside class="aside-index">
 
             <section class="aside-news">
                 <h2>Últimas noticias</h2>
-                <img src="img/news/headline.png" alt="tapa de diario, atentado" width=50px>
+                <img src="img/news/headline.png" alt="tapa de diario, atentado">
 
                 <h3>Video exclusivo</h3>
 
                 <figure>
-                    <video src="img/news/atentado.mp4" controls autoplay loop muted preload width=50px></video>
+                    <video src="img/news/atentado.mp4" controls autoplay loop muted preload></video>
                     <figcaption> ADVERTENCIA: Estas imágenes pueden herir la sensibilidad
                     </figcaption>
                 </figure>
@@ -252,8 +245,7 @@ agregándole lo que falte para cumplir con los requisitos.
 
             <section class="aside-wanted">
                 <h3>Buscado</h3>
-                <a href="mas-buscados.html"><img src="img/news/ezic-buscado.png" alt="imagen del terrorista"
-                        width=50px></a>
+                <a href="buscados.html"><img src="img/news/ezic-buscado.png" alt="imagen del terrorista buscado"></a>
             </section>
         </aside>
 
@@ -261,10 +253,9 @@ agregándole lo que falte para cumplir con los requisitos.
 
     <footer class="footer">
         <div class="iconos">
-            <div class="ir-arriba">
+            <div class="button arriba">
                 <a href="#ir-arriba"><i class="fas fa-chevron-up"></i></a>
             </div>
-
             <div class="social">
                 <ul>
                     <li>
@@ -280,19 +271,10 @@ agregándole lo que falte para cumplir con los requisitos.
                     <li>
                         <a href="##"><i class="fab fa-pinterest-p"></i></a>
                     </li>
-
                 </ul>
             </div>
-
         </div>
-
-        <div>
-            <h4 class="final-title-neon">&copy; Power by mF | Martin Frontroth</h4>
-        </div>
-
-
-
-
+        <h4 class="final-title-neon">&copy; Power by mF | Martin Frontroth</h4>
     </footer>
 </body>
 

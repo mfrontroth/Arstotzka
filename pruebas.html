@@ -24,7 +24,7 @@ body{
   color:white;
   font-family:Helvetica, sans-serif;
   font-weight:bold;
-  font-size:36px;
+  font-size: 1rem;
   text-align: center;
   text-decoration:none;
   background-color:#FFA12B;
@@ -76,8 +76,6 @@ body{
     width: 100px;
     border: 1px solid #000;
     display: flex;
-
-    font-size: xx-large;
     justify-content: center;
     align-items: center;
     color: #d7e6e6;
@@ -161,6 +159,30 @@ ul li:nth-child(4) a:before {
 }
 
 
+/**** Icono IR ARRIBA ****/
+.ir-arriba a{
+    font-size: 30px;
+    color:#d7e6e6;
+    background-color: #1c2f22;
+    text-decoration: none;
+    padding: 5px;
+    width: 300px;
+    border-radius: 10px;
+    border: 3px solid #d7e6e6;
+    display: flex;
+    justify-content: center;
+}
+    .ir-arriba a:hover{
+        border: 3px solid #FFD700;
+        color: #FFD700;
+    }
+
+    .ir-arriba a:active{
+        color:#ca2d2d;
+        background-color: #d7e6e6;
+        border: 3px solid #ca2d2d;
+        transform: scale(.8);
+    }
 
 
 
@@ -179,14 +201,23 @@ ul li:nth-child(4) a:before {
 
     <br><br><br><br><br><br><br><br><br><br>
     <div class="container">
-    <div class="box" style="background-color: #ca2d2d">1</div>
-    <div class="box" style="background-color: #d7e6e6; color:#000">2</div>
-    <div class="box" style="background-color: #000000">3</div> 
+<p>header:</p>
+<br>
+<div class="box" style="background-color: #000000">fondo</div> 
+    <div class="box" style="background-color: #ca2d2d">texto header</div>
+    <div class="box" style="background-color: #d7e6e6; color:#000">textos</div>
+
+
+
+<br><br><br><br><br><br>
+
+
     <div class="box" style="background-color: #1c2f22">4</div>
     <div class="box" style="background-color: #383c3c">5</div>
     <div class="box" style="background-color: #300e0c">6</div>
     <div class="box" style="background-color: #F78900">7</div>
     <div class="box" style="background-color: #915100">8</div>
+    <div class="box" style="background-color: #300e0c">NEWS FONDO</div>
 
     <div class="box" style="background-color: #888888">9</div>
     <div class="box" style="background-color: #1c2f22">10</div>
@@ -199,7 +230,7 @@ ul li:nth-child(4) a:before {
   <div class="container2">
     <h1>buscados</h1>
   <div class="box" style="background-color: #055052">fondo</div>
-  <div class="box" style="background-color: #d7e6e6; color:#000">2</div>
+  <div class="box" style="background-color: #300e0c; color:#000">2</div>
   <div class="box" style="background-color: #05505279">5</div>
   <div class="box" style="background-color: #ca2d2d">6</div>
 
@@ -211,20 +242,12 @@ ul li:nth-child(4) a:before {
 
 
   <br><br><br><br><br><br><br><br><br><br>
-  
-<ul>
-  <li>
-    <a href="#">
-      <i class="fab fa-facebook-f icon"></i>    </a>
-  </li>
-  <li>
-    <a href="#"><i class="fab fa-twitter icon"></i></a>
-  </li>
-  <li>
-    <a href="#"><i class="fab fa-linkedin-in icon"></i></a></li>
-  <li>
-    <a href="#"><i class="fab fa-google-plus-g icon"></i></a></li>
-</ul>
+
+
+  <div class="ir-arriba">
+    <a href="#ir-arriba"><i class="fas fa-chevron-up">casa</i></a>
+</div>
+
 </body>
 
 </html>

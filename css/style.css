@@ -1,8 +1,8 @@
 /**** Notas adicionales de estilos ****/
 /*
 Font family
-    Para el cuerpo: font-family: 'Open Sans', sans-serif;
-    Para los encabezados: font-family: 'Russo One', sans-serif;
+   Para los encabezados: font-family: 'Russo One', sans-serif;
+    Para el cuerpo: font-family: 'Roboto', sans-serif;
 */
 
 
@@ -34,14 +34,17 @@ Font family
 h1, h2, h3, h4{
     font-family: 'Russo One', sans-serif;
     text-transform: uppercase;
+    
 }
 
 img, video{
-    max-width: 100%; /* Al 100% te aseguras de que todas las imágenes no excedan el tamaño del padre. */
-}
+    max-width: 100%; 
+    /* Al 100% te aseguras de que todas las imágenes no excedan el tamaño del padre.  */
+} 
 
 body{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    color: #e6d7e4;
     width: 97%;
     max-width: 1600px;
     margin: auto;
@@ -191,109 +194,126 @@ footer {
 
 /*********************************** página INDEX ***************************************/
 
-.index-main{
-    font-family: 'Open Sans', sans-serif;
-    display: flex;
-    flex-wrap: nowrap;
+
+
+
+.img-glory, .img-cartel{
+    width: 250px;
+    height: auto;
+    border: 3px double #ddd;
+    border-radius: 4px;
+    padding: 5px;
 }
 
+.index-main{
+    font-family: 'Roboto', sans-serif;
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "main aside";
+
+}
     .main-articles-container{
-        border: 5px solid red;
+        grid-area: main;
+        background-color: #1c2f22;
         display: flex;
         flex-direction: column;
     }
-
-        .top-section-container{
-            background-color: gold;
-
+        .arstotzka-history-container{
+            display: grid;
+            grid-gap: 30px 30px;
+            grid-template-areas: 
+            "imagen-izq arstotzka"
+            "himno himno"
+            "imagen-der historia";
+            align-items: center;
         }
-            .article-arstotzka{
-                background-color: firebrick;
-
+            .arstotzka-history-container .img-glory{
+                grid-area: imagen-izq;
+                
             }
-            .glory-gif {
-                background-image: url("../img/glory.gif");
-                max-width: 100%;
-                aspect-ratio: 16/9; /*Aspect Ratio */
-                background-repeat: no-repeat; /*No se repetirá*/
-                background-size: cover; /* Imagen al 100% del ancho */
-                background-attachment: fixed; /*Posicion fija para la imagen*/
-
+            .arstotzka-history-container .art-arstotzka{
+                grid-area: arstotzka;
             }
-            .article-history{
-                background-color: green;
-                    border: 5px solid blueviolet;
+            .arstotzka-history-container .himno {
+                grid-area: himno;
+                display: inline-flex;
+                justify-content: space-evenly;
+                align-items: center;
+            }
+            .arstotzka-history-container .himno .himno-audio{
+                grid-area: himno-audio;
+            }
+            .arstotzka-history-container .art-historia{
+                grid-area: historia;
+            }
+            .arstotzka-history-container .img-cartel{
+                grid-area: imagen-der;
             }
 
-        .section-ministries-geography-conatainer{
-                background-color: firebrick;
-                border: 5px solid grey;
-                display: flex;
+    .mnistries-geography-container{
+        display: flex;
+    }
+        .article-ministries{
+            display: grid;
+            background-color: #383c3c;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 50px repeat(2, 1fr);
+            grid-template-areas:
+            "titulo titulo titulo"
+            "politico-izq . politico-der"
+            "texto texto texto";
         }
-            .section-ministries{
-                display: grid;
-                grid-template-areas:
-                "titulo titulo titulo"
-                "politico-izq . politico-der"
-                "texto texto texto";
-                background-color: green;
-                border: 5px solid blueviolet;
-            }
-            .section-ministries h2{
+            .article-ministries h2{
                 grid-area: titulo;
+                background-color: thistle;
+                
             }
 
-            .politico-der{
+            .article-ministries .politico-der{
                 grid-area: politico-der;
+                
             }
-            .politico-izq{
+            .article-ministries .politico-izq{
                 grid-area: politico-izq;
             }
-            .section-ministries div{
+            .article-ministries div{
                 grid-area: texto;
             }
-
-
-
-            .section-geography{
-                background-color: gold;
-                border: 5px solid blue;
-                flex: 1 1 auto;
+        .article-geography{
+            background-color: #300e0c;
+        }
+    .aside-index {
+        grid-area: aside;
+           
+display: flex;
+flex-direction: column;
+        }
+            .aside-news{
+                
             }
-                .section-geography img{
-                    width: 300px;
-                }
-
-.aside-index {
-        /*background-color:#383c3c;*/
-        background-color: green;
-        border: 5px solid red;
-    }
-        .aside-news{
-            background-color: blue;
-            border: 5px solid grey;
-        }
-        
-        .aside-wanted{          
-            color:#d7e6e6;
-            background-color: #055052;
-            padding: 0 0.5rem 0.5rem;
-            border-radius: 1rem;
-            border: 3px solid #d7e6e6;
-            text-decoration: none;
-        }
-            .aside-wanted h3{
-                color: #d7e6e6;
-                text-align: center;
-                font-size: 2rem;
+            
+            .aside-wanted{          
+                color:#d7e6e6;
+                background-color: #055052;
+                padding: 0 0.5rem 0.5rem;
+                border-radius: 1rem;
+                border: 3px solid #d7e6e6;
                 text-decoration: none;
             }
-            .aside-wanted:hover{
-                border: 3px solid #FFD700;
-            }
-            .aside-wanted:active{
-                transform: scale(.8);
-            }
+                .aside-wanted h3{
+                    color: #d7e6e6;
+                    text-align: center;
+                    font-size: 2rem;
+                    text-decoration: none;
+                }
+                .aside-wanted:hover{
+                    border: 3px solid #FFD700;
+                }
+                .aside-wanted:active{
+                    transform: scale(.8);
+                }
 
 
 
@@ -377,7 +397,7 @@ color:#888888;
 
 
 /*********************************** página PAPERS, PLEASE ***************************************/
-.papers-please-main{
+/* .papers-please-main{
     display: flex;
     flex-direction: column;
 }
@@ -415,4 +435,4 @@ color:#888888;
 .papers-please-origen a{
     grid-area: imagen-2;
     background-color: orange;
-}
+} */

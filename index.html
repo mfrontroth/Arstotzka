@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
- 
+
     <!--falvicon: 16x16 y 32x32-->
     <link rel="icon" href="img/glory.ico" sizes="16x16 32x32">
 
@@ -16,7 +16,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,400&family=Russo+One&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,900;1,400&family=Russo+One&display=swap"
         rel="stylesheet">
 
     <!--Style Sheets-->
@@ -43,7 +43,7 @@ FALTA TERMINAR. El formulario se encuentra en la página DENUNCIAS.
 ● iframes -> ver página BUSCADOS, "puesto de control fronterizo"
 ● íconos de FontAwesome -> Utilizados para los socials media
 ● fuentes locales o bien de Google Fonts -> Se utilizan de Google Fonts:
-        font-family: 'Open Sans', sans-serif;-> para cuerpo
+        font-family: 'Roboto', sans-serif;-> para cuerpo
         font-family: 'Russo One', sans-serif;-> para títulos
 
 
@@ -108,10 +108,12 @@ agregándole lo que falte para cumplir con los requisitos.
     <main class="index-main">
         <section class="main-articles-container">
 
-            <section class="top-section-container">
-                <article class="article-arstotzka">
+            <section class="arstotzka-history-container">
+
+                <img src="img/index-back-img.png" class="img-glory" alt="Imagen de propaganda">
+
+                <div class="art-arstotzka">
                     <h2>Arstotzka</h2>
-                    <img src="img/main-top-left.png" alt="Imagen de propaganda: Gloria a Arstotzka">
                     <p> Arstotzka es un país comunista en <a href="papers-please.html">Papers, Please</a>. Su sede de
                         gobierno se encuentra en Paradizna, su ciudad capital.
                         <br>
@@ -124,17 +126,16 @@ agregándole lo que falte para cumplir con los requisitos.
                         <br>
                         El lema del país es "Gloria a Arstotzka".
                     </p>
-                    <div>
-                        <h3> Himno nacional </h3>
-                        <audio src="music/Papers_Please_Theme_Song.mp3" controls="muted"></audio>
-                    </div>
-                </article>
-
-                <div class="glory-gif">
-                    <!--espacio para colodar gif de fondo-->
                 </div>
 
-                <article class="article-history">
+                <div class="himno">
+                    <h2>Himno nacional</h2>
+                    <div class="himno-audio">
+                        <audio  src="music/Papers_Please_Theme_Song.mp3" controls="muted"></audio>
+                    </div>
+                </div>
+
+                <div class="art-historia">
                     <h2>Historia reciente</h2>
                     <!--decorar textos y no traducir y poner marcadores de que es EZIC-->
                     <p>
@@ -154,53 +155,54 @@ agregándole lo que falte para cumplir con los requisitos.
                         auditorías de información completa para todos los trabajadores del gobierno Arstotzkiano, hasta
                         arrestos y fusilamientos.
                     </p>
-                    <div>
-                        <img src="img/cartel-atencion.png" alt="cartel de atencion">
-                    </div>
-                </article>
+                </div>
+
+
+                <img src="img/cartel-atencion.png" class="img-cartel" alt="cartel de atencion">
+
             </section>
 
-            <section class="section-ministries-geography-conatainer">
+            <section class="ministries-geography-container">
 
-                <section class="section-ministries">
+                <article class="article-ministries">
                     <h2>Principales Ministerios</h2>
 
-                    <img src="img/politico.PNG" alt="imagen de un político de mayor rango" class="politico-der">
-                    <img src="img/control.PNG" alt="imagen de un político de menor rango" class="politico-izq">
+                    <img src="img/politico.PNG" class="politico-der" alt="imagen de un político de mayor rango">
+                    <img src="img/control.PNG" class="politico-izq" alt="imagen de un político de menor rango">
 
 
                     <div>
-                        <h3><span>1</span> Ministerio de Admisión</h3>
+                        <h3>Ministerio de Admisión</h3>
                         <p>
                             El Ministerio de Admisión está a cargo del control fronterizo. Emite la mayoría
                             de los documentos oficiales requeridos y también emite citaciones en caso de que un
                             inspector cometa algun un error.
                         </p>
 
-                        <h3><span>2</span> Ministerio de Trabajo</h3>
+                        <h3>Ministerio de Trabajo</h3>
                         <p>
                             El Ministerio de Trabajo emite pases de trabajo a los inmigrantes que desean
                             trabajar en Arstotzka.
                         </p>
 
-                        <h3><span>3</span> Ministerio de Información</h3>
+                        <h3>Ministerio de Información</h3>
                         <p>Realiza auditorías de información sobre empleados gubernamentales y monitorea posibles
                             amenazas nacionales e internacionales a Arstotzka.
                         </p>
 
-                        <h3><span>4</span> Ministerio de Salud</h3>
+                        <h3>Ministerio de Salud</h3>
                         <p>Ministerio a cargo de la salud pública. </p>
 
-                        <h3><span>5</span> Ministerio de Renta</h3>
+                        <h3>Ministerio de Renta</h3>
                         <p>Encargado de investigar anomalías financieras. Los ciudadanos pueden presentar un
                             informe si notan un aumento repentino de la riqueza de alguien.</p>
 
-                        <h3><span>6</span> Ministerio de Comercio</h3>
+                        <h3>Ministerio de Comercio</h3>
                         <p>Ministerio a cargo de producir la moneda de curso legal.</p>
                     </div>
-                </section>
+                </article>
 
-                <section class="section-geography">
+                <article class="article-geography">
 
                     <h2>Geografía</h2>
                     <div>
@@ -223,7 +225,7 @@ agregándole lo que falte para cumplir con los requisitos.
                         </ul>
                     </div>
 
-                </section>
+                </article>
             </section>
         </section>
 

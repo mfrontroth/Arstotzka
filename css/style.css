@@ -43,6 +43,8 @@ img, video{
 } 
 
 body{
+    display: flex;
+    flex-flow: column nowrap;
     font-family: 'Roboto', sans-serif;
     color: #e6d7e4;
     width: 97%;
@@ -54,9 +56,9 @@ body{
 /***********************************  HEADER ***************************************/
 
 header{
-    width: 100%;
+    /* width: 100%; */
     display: flex;
-    flex-direction: column;
+    /* flex-flow: column nowrap; */
 }
     .header-logo{
         display: flex;
@@ -71,7 +73,7 @@ header{
             color: #ca2d2d;
             letter-spacing: 2px;
             word-spacing: 3px;
-            font-size: 3em;
+            /* font-size: 3em; */
         }
     .header-nav ul {
         display: flex;
@@ -80,7 +82,7 @@ header{
         justify-content: space-evenly;
         margin-bottom: 0.5rem;
         text-transform: uppercase;
-        font-family: 'Russo One', sans-serif;
+        
         letter-spacing: 5px;
         margin: 1rem;
     }
@@ -90,6 +92,7 @@ header{
             
         }
             .button a{
+                font-family: 'Russo One', sans-serif;
                 color:#d7e6e6;
                 font-weight: bold;
                 font-size: 1.2rem;
@@ -207,15 +210,12 @@ footer {
 
 .index-main{
     font-family: 'Roboto', sans-serif;
-    display:grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: 
-    "main aside";
+display: flex;
+
 
 }
     .main-articles-container{
-        grid-area: main;
+        
         background-color: #1c2f22;
         display: flex;
         flex-direction: column;
@@ -271,6 +271,13 @@ footer {
                 
             }
 
+            .article-ministries .politico-der, .politico-izq{
+                border-radius: 50%;
+                width: 200px;
+                border: 5px solid #e6d7e4; 
+                
+            }
+
             .article-ministries .politico-der{
                 grid-area: politico-der;
                 
@@ -285,7 +292,7 @@ footer {
             background-color: #300e0c;
         }
     .aside-index {
-        grid-area: aside;
+        
            
 display: flex;
 flex-direction: column;

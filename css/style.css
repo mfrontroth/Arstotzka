@@ -396,6 +396,91 @@ color:#888888;
 
 
 
+/*********************************** BUSCADOS STYLES ***************************************/
+/* .buscados-main {
+    
+    display: flex;
+}
+
+.buscados-main table {
+    flex: 1 1 75%;
+    border: 5px double #055052;
+    color: #d7e6e6;
+    background-color: #14323a;
+    
+}
+    .buscados-main th, .buscados-main td{
+        text-align: center;
+        vertical-align: middle;
+        padding: 1rem 0;
+    }
+    #buscados-table thead tr:nth-child(2), #buscados-table tbody tr:nth-child(-n+3){
+        background-color: #246163;
+    }
+    #buscados-table tbody .tr-title td:nth-child(odd){
+        font-weight: bold;
+        text-transform: uppercase;
+        text-align: end;
+        
+        border-left: 1px solid #055052;
+    }
+    #buscados-table tbody .tr-title td:nth-child(even){
+        font-style: italic;
+        text-align: center;
+        border-right: 1px solid #055052;
+       
+    }
+        #buscados-table tbody img{
+            width: 15rem;
+        }
+        #buscados-table tbody .tr-title img{
+            width: 3rem;
+        }
+        
+    #buscados-table tfoot{
+    background-color: #ca2d2d;
+    text-align: center;
+    
+    font-size: bold;
+    text-transform: uppercase;
+    }
+    
+.buscados-aside{
+    flex: 1 1 25%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    margin-left: 1rem;
+    
+    color:#888888;
+    justify-content: space-around;
+    
+}
+    .puesto-fronterizo, .oficial-a-cargo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+        .puesto-fronterizo iframe{
+            width: 70%;
+            margin-top: 0.25rem;
+        }
+        .puesto-fronterizo p{
+            width: 80%;
+            font-style: italic;
+        }
+
+
+.oficial-a-cargo img{
+    width: 80%;
+    object-fit: contain;
+    display: block;
+    margin: auto;
+    border-radius: 10px; 
+    
+} */
 
 
 /*********************************** página DENUNCIAS ***************************************/

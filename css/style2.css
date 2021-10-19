@@ -38,9 +38,7 @@ Font family
     text-decoration: none;
     
 }
-img{
-    width: 50px;
-}
+
 
 p{
     line-height: 25px;
@@ -55,27 +53,27 @@ body{
     color:#d7e6e6;
     font-family: 'Montserrat', sans-serif;
 }
+
+h1, h2, h3, h4{
+
+font-family: 'Russo One', sans-serif;
+text-transform: uppercase;
+text-align: center;
+letter-spacing: 2px;
+}
+
+
 h1{
-    font-family: 'Russo One', sans-serif;
-    letter-spacing: 5px;
-    text-transform: uppercase;
+    letter-spacing: 5px; 
     font-size: 2.5rem;
 }
 
 h2{
-    font-family: 'Russo One', sans-serif;
-    letter-spacing: 2px;
-    text-transform: uppercase;
+
     font-size: 1.5rem;
     padding: 0.5rem 0;
 }
 
-h3, h4{
-    font-family: 'Russo One', sans-serif;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    
-}
 
 
 .button {
@@ -113,10 +111,8 @@ h3, h4{
 /***********************************  HEADER ***************************************/
 
 header{
-
     display: flex;
     flex-flow: column nowrap;
-    border: 10px solid violet;
 }
     .header-logo{
         display: flex;
@@ -131,7 +127,6 @@ header{
             color: #ca2d2d;
             margin: 0 0 0 0.5rem;
         }
-
     .header-nav ul{
     display: flex;
     flex-flow: row wrap;
@@ -148,19 +143,19 @@ header{
 /***********************************  FOOTER ***************************************/
 
 .footer{
-    background-color: #000;
     display: flex;
     flex-direction: column;
-
-    border: 10px solid violet;
 }
     .footer .footer-icons{
         display: flex;
         flex-flow: row nowrap;
+        justify-content: space-between;
+        margin-bottom: 1rem;
     }
         .footer .footer-icons .arriba{
-            flex: 1 1 auto;
+           
             justify-content: center;
+            margin: 0 2rem
         }
             .footer .footer-icons .arriba a{
                 padding: 0 5rem;
@@ -168,7 +163,6 @@ header{
             }
 
         .footer .footer-icons .social {
-            flex: 5 1 auto;
             display:flex;
             justify-content: flex-end;
         }
@@ -220,7 +214,7 @@ header{
             letter-spacing: 5px;
             animation: flicker 1.5s infinite alternate;
         }
-            /* Flickering animation */
+            /* animation */
             @keyframes flicker {
                 0%, 18%, 22%, 25%, 53%, 57%, 100% {
                     text-shadow:
@@ -240,111 +234,120 @@ header{
 
 /*********************************** INDEX STYLES ***************************************/
 
-
-.politico-izq, .politico-der{
-    width: 100px;
-    border: 3px solid #d7e6e6;
-    border-radius: 50%;
-}
-
-
-
 .index-main{
     display: flex;
     flex-flow: row nowrap;
     margin: 1rem 0;
-    border: 10px solid violet;
 }
     .articles-index-container{
-        background-color: green;
         flex: 1 1 75%;
         display: flex;
         flex-flow: column nowrap;
     }
         .arstotzka-container{
-        background-color: blue;
+        
         display: flex;
         flex-flow: column nowrap;
         }
-        /*
-            .index-main .articles-index-container .arstotzka-container .art-arstotzka{
-                background-color: green;
+            .art-arstotzka{
+                
                 display: flex;
-                flex-direction: row;
+                flex-direction: row; 
+                margin-bottom: 3rem;
             }
-                .index-main .articles-index-container .arstotzka-container .art-arstotzka img{
-                    width: 200px;
+                .art-arstotzka img{
+                  height: 300px;
+                  width: auto;
+                  margin-right: 1rem;
+                  align-self: center;
                 }
-                .index-main .articles-index-container .arstotzka-container .art-arstotzka div{
+                .art-arstotzka div{
                     display: flex;
                     flex-flow: column nowrap;
-
-
+                    justify-content: center;
                 }
-            .index-main .articles-index-container .arstotzka-container .art-himno{
-                background-color: red;
+            .art-historia{
                 display: flex;
-                flex-flow: row nowrap;
+                flex-direction: row; 
+                margin-bottom: 3rem;
             }
-                .index-main .articles-index-container .arstotzka-container .art-himno h2{
-                   background-color: turquoise;
+                .art-historia div{
+                    display: flex;
+                    flex-flow: column nowrap;
+                    justify-content: center;
                 }
-                .index-main .articles-index-container .arstotzka-container .art-himno .himno-audio{
-                    background-color: orange;
+                .art-historia img{
+                  height: 300px;
+                  width: auto;
+                  margin-left: 1rem;
+                  align-self: center;
                 }
-            .index-main .articles-index-container .arstotzka-container .art-historia{
-                background-color: green;
+            .art-himno{
+                /* background-color: orange; */
                 display: flex;
-                flex-flow: row nowrap;
+                flex-flow: column nowrap;
+                align-items: center;
+                padding: 10rem 0 10rem;
             }
-                .index-main .articles-index-container .arstotzka-container .art-historia div{
-                    background-color: yellow;
-
+                .glory-gif{
+                    
+                    background-image: url(../img/glory.gif);
+                    background-repeat: no-repeat;
+                    background-attachment: fixed;
+                    background-size: cover;
+                    background-position: center;
                 }
-                .index-main .articles-index-container .arstotzka-container .art-historia img{
-                    width: 200px;
-                }
-        .index-main .articles-index-container .ministries-geography-container{
-            background-color: blue;
+        .ministries-geography-container{
+           
             display: flex;
             flex-flow: row nowrap;
+            margin-top: 3rem;
         }
-            .index-main .articles-index-container .ministries-geography-container .art-ministries{
+            .ministries-geography-container .art-ministries{
 
-                background-color: green;
-                display: grid;
-                grid-template-areas:
-                "imagen-izq titulo imagen-der"
-                "texto texto texto";
+                
+                margin-right: 1rem;
+                padding: 1rem 0;
+                display: flex;
+                flex-flow: row wrap;
+                align-items: center;
+                justify-content: space-around;   
+                flex: 1 1 60%;
             }
-                .index-main .articles-index-container .ministries-geography-container .art-ministries h2{
-                    grid-area: titulo;
+                .politico-izq, .politico-der{
+                    width: 100px;
+                    border: 3px solid #d7e6e6;
+                    border-radius: 50%;
                 }
-                .index-main .articles-index-container .ministries-geography-container .art-ministries .politico-izq{
-                    grid-area: imagen-izq;
+                .art-ministries div{
+                    flex: 1 1 100%;
+                    padding: 1rem 0 3rem 0;     
                 }
-                .index-main .articles-index-container .ministries-geography-container .art-ministries .politico-der{
-                    grid-area: imagen-der;
+                    .art-ministries div h3{
+                        padding: 1rem 0;
+                    }
+                    .art-ministries div hr {
+                        border: 1px double red;
+                        width: 70%;
+                        margin: 0.5rem auto;
+                    }
+            .art-geography{
+                flex: 1 1 40%;
+
+             
+
+            } 
+                .art-geography div{
+                padding: 1rem 0 2rem 2rem; 
+              
                 }
-                .index-main .articles-index-container .ministries-geography-container .art-ministries div{
-                    grid-area: texto;
+                .art-geography div img{
+                    width: 90%;
+                 
+                    margin: 2rem 0; 
                 }
 
 
-            .index-main .articles-index-container .ministries-geography-container .art-geography{
-
-                background-color: red;
-                font-display: flex;
-                flex-flow: column nowrap;
-            }
-                .index-main .articles-index-container .ministries-geography-container .art-geography div{
-                background-color: ivory;
-                }
-                .index-main .articles-index-container .ministries-geography-container .art-geography img{
-                 width: 400px;
-                }
-
- */
 
     .aside-index-container{
         flex: 1 1 25%;
@@ -356,7 +359,7 @@ header{
         position: sticky;
         top: 0; /*para que funcione sticky*/
         justify-content: space-around;
-        background-color: red;
+
     }
         .paper-news {
             display: flex;
@@ -365,7 +368,7 @@ header{
             justify-content: center;
         }
             .paper-news img{
-                width: 90%;
+                width: 70%;
                 margin-top: 0.25rem;
             }
         .video-news{
@@ -413,3 +416,190 @@ header{
                 }
 
 
+/*********************************** POSTERS STYLES ***************************************/
+.grid-posters{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 2rem 1rem;
+    justify-items: auto;
+    align-items: start;
+    
+}
+
+    .grid-posters img{
+        width: 100%;
+        box-shadow: #d7e6e6 0px 20px 30px -10px;
+    }
+
+/*********************************** BUSCADOS STYLES ***************************************/
+
+.main-buscados{
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 1rem 0;
+}
+
+.grid-container-buscados{
+    flex: 1 1 75%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;  
+    grid-template-rows: repeat(3, auto); /*tamaño automático para que no rebalse*/
+    grid-template-areas:
+        "titulo     titulo"
+        "imagen     descripcion"
+        "alerta     alerta";
+    justify-items: center;
+    align-items: auto;
+    border: 10px solid blue;
+}
+    
+    .grid-container-buscados .grid-header{
+        grid-area: titulo;
+        background-color: brown;
+        border: 10px solid yellow;
+    }
+
+    .grid-container-buscados .grid-img{
+        grid-area: imagen;
+        background-color: brown;
+        border: 10px solid blue;
+    }
+        .grid-container-buscados .grid-img img{
+            width: 90%;
+        }
+    
+    
+        .grid-container-buscados .grid-table-ppal{
+        grid-area: descripcion;
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-self: normal;
+        margin-left: 0.5rem;
+        
+    }
+        .grid-container-buscados .grid-table-ppal img{
+                width: 50px;
+            }
+            .grid-container-buscados .grid-table-ppal td:nth-child(odd){
+                font-weight: bold;
+                text-transform: uppercase;
+                text-align: center;
+                border: 1px solid red;
+
+            }
+            .grid-container-buscados .grid-table-ppal td:nth-child(even){
+                font-style: italic;
+                text-align: center;
+                border: 1px solid blue;
+            }
+
+        .grid-container-buscados  .grid-alert {
+        grid-area: alerta;
+        width: 100%;
+        text-align: center;
+        align-self: center;
+        text-transform: uppercase;
+        font-weight: bold;
+        background-color: green;
+    }
+
+
+    
+.main-buscados .buscados-aside{
+    flex: 1 1 25%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    margin-left: 1rem;
+    background-color: brown;
+    color:#888888;
+    justify-content: space-around; 
+    
+}
+    .puesto-fronterizo, .oficial-a-cargo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+        .puesto-fronterizo iframe{
+            width: 100%;
+            margin-top: 0.25rem;
+        }
+        .puesto-fronterizo p{
+            width: 80%;
+            font-style: italic;
+        }
+
+    .oficial-a-cargo img{
+        width: 80%;
+        object-fit: contain;
+        display: block;
+        margin: auto;
+        border-radius: 10px; 
+        
+        
+    } 
+
+    
+/*********************************** DENUNCIAS Styles ***************************************/
+ 
+
+
+
+
+/*********************************** PAPERS, PLEASE Styles***************************************/
+ .main-papers-please{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.papers-please-resumen{
+    border: 1px solid red;
+}
+
+.papers-please-imagen-juego{
+    background-color: green;
+}
+    .papers-please-imagen-juego .grid-pp-img{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        align-items: center;
+        grid-gap: 2rem 2rem;
+    }
+
+        .papers-please-imagen-juego img{
+            width: 100%;
+        box-shadow: #d32a2a 0px 20px 30px -10px;
+        }
+
+.papers-please-origen{
+    border: 1px solid red;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: auto 1fr;
+    grid-template-areas:
+    "titulo titulo titulo"
+    "imagen-1 texto imagen-2";
+    border: 1px solid red;
+}
+
+    .papers-please-origen h2{
+        grid-area: titulo;
+    }
+
+    .papers-please-origen div{
+        grid-area: texto;
+    }
+    .papers-please-origen img{
+        grid-area: imagen-1;
+        width: 100%;
+    }
+    .papers-please-origen a{
+        grid-area: imagen-2;
+        background-color: orange;
+    } 

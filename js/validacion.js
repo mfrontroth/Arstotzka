@@ -1,79 +1,116 @@
 const formulario = document.getElementById('formulario');
 const inputs = document.querySelectorAll('#formulario input');
-const terminos = document.getElementById('checkValidation');
+
+//Expresiones regulares que se usan para validar cada campo
+const expresiones = {
+    palabras: /^[a-zA-ZÀ-ÿ\s]*$/,
+    mail: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]*$/,
+    numeros: /^([0-9])*$/,
+    alfanumerico: /^[A-Za-z0-9]*$/
+
+}
 
 const campos = {
     nombre: false,
     apellido: false,
-    genero: false,
     dni: false,
-    email: false,
+    mail: false,
     telefono: false,
     calle: false,
     altura: false,
     piso: false,
     depto: false,
     zipcode: false,
-    ciudad: false,
-    pais: false,
-    declaracion: false
+    ciudad: false
+
 }
 
+const validarFormulario = (e) => {
+    switch (e.target.name) {
 
 
 
-let flag = true;
+        
 
-formulario.addEventListener('submit', (e) => {
-    e.preventDefault();
 
-    for (const [key, valor] of Object.entries(campos)) {
-        flag = flag && valor;
-        console.log(flag);
+        case "nombre":
+        case "apellido":
+        case "calle":
+        case "ciudad":
+
+
+            validarCampo(expresiones.palabras, e.target, e.target.name);
+            break;
+
+        case "mail":
+            validarCampo(expresiones.mail, e.target, e.target.name);
+            break;
+
+        case "dni":
+        case "telefono":
+        case "altura":
+        case "piso":
+            validarCampo(expresiones.numeros, e.target, e.target.name);
+            break;
+
+
+        case "depto":
+        case "zipcode":
+            validarCampo(expresiones.alfanumerico, e.target, e.target.name);
+            break;
+
+
     }
+}
 
-    if (flag) {
-        console.log("verdadero");
+const validarCampo = (expresion, input, campo) => {
+    if (expresion.test(input.value) && input.value !== "") {
+        document.getElementById(`input_${campo}`).classList.add('is-valid');
+        document.getElementById(`input_${campo}`).classList.remove('is-invalid');
+        campos[campo] = true;
     } else {
-        console.log("falso");
-    }
-
-
-
-    //  if( Object.values(campos)==="false"){
-    //      console.log("funciono");
-    // };
-    //     formulario.reset();
-
-    //     document.getElementById('formulario__mensaje-exito').classList.add('formulario__mensaje-exito-activo');
-    //     setTimeout(() => {
-    //         document.getElementById('formulario__mensaje-exito').classList.remove('formulario__mensaje-exito-activo');
-    //     }, 5000);
-
-    //     document.querySelectorAll('.formulario__grupo-correcto').forEach((icono) => {
-    //         icono.classList.remove('formulario__grupo-correcto');
-    //     });
-    // } else {
-    //     document.getElementById('formulario__mensaje').classList.add('formulario__mensaje-activo');
-    // }
-});
-
-
-
-const validarCampo = (e) => {
-    if (e.target.value !== "" || campos[e.target.name] === false) {
-        document.getElementById("inputName").classList.add('is-valid');
-        document.getElementById("inputName").classList.remove('is-invalid');
-        campos[e.target.name] = true;
-
-    } else {
-        document.getElementById("inputName").classList.remove('is-valid');
-        document.getElementById("inputName").classList.add('is-invalid');
-        campos[e.target.name] = false;
+        document.getElementById(`input_${campo}`).classList.add('is-invalid');
+        document.getElementById(`input_${campo}`).classList.remove('is-valid');
+        campos[campo] = false;
     }
 }
 
 inputs.forEach((input) => {
-    // input.classList.add('is-invalid'); //inicializa todos en invalido
-    input.addEventListener('keyup', validarCampo);
+    input.addEventListener('keyup', validarFormulario);
+
 });
+
+
+
+formulario.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    // const terminos = document.getElementById('input_terminos');
+
+
+
+    var declaracion = document.getElementById('input_declaracion').value;
+    const terminos = document.getElementById('input_terminos');
+    
+    if(declaracion ==="" || !terminos.checked){
+        alert("Debe escribir la declaración y aceptar los términos y condiciones");
+        } else {
+
+            var flag = true;
+            for (const [key, valor] of Object.entries(campos)) {
+                console.log(flag);
+                flag = flag && valor;
+                console.log(flag);
+            }
+    
+            if(flag){
+                alert("Datos enviados correctamente");
+                   // submit(); // No hay mail de destino, se cambió para que cuando este ok lo informe
+                } else {
+                    alert("Hay campos sin completar correctamente, favor de verificar");
+                }
+    
+        }
+
+    });
+

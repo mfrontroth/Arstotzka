@@ -85,7 +85,6 @@ inputs.forEach((input) => {
 formulario.addEventListener('submit', (e) => {
     e.preventDefault();
 
-    // const terminos = document.getElementById('input_terminos');
 
 
 
@@ -104,8 +103,11 @@ formulario.addEventListener('submit', (e) => {
             }
     
             if(flag){
-                alert("Datos enviados correctamente");
+                alert("Datos enviados correctamente!!");
                    // submit(); // No hay mail de destino, se cambió para que cuando este ok lo informe
+                   formulario.reset();
+                   location.reload();
+
                 } else {
                     alert("Hay campos sin completar correctamente, favor de verificar");
                 }

@@ -1,22 +1,11 @@
 /*
-MEDIDAS DE PANTALLA
+MEDIDAS DE PANTALLA 
 
-Estas son las resoluciones de pantalla más comunes en todo el
-mundo para que adaptes tu web a medidas responsive:
+PC escritorio >960px
+720px < Tablet < 960 px
+Celular < 720px
+Tamaño mínimo: 400px
 
-320px — 480px: Mobile devices
-481px — 768px: iPads, Tablets
-769px — 1024px: Small screens, laptops
-1025px — 1200px: Desktops, large screens
-1201px and more —  Extra large screens, TV
-
-FUENTE: https://www.freecodecamp.org/news/css-media-queries-breakpoints-media-types-standard-resolutions-and-more/
-
-Se adopta:
-360 x 640 px: Mobile devices
-640px: iPads, Tablets
-1366px: laptops
-1600px: max
 */
 
 /*
@@ -36,56 +25,48 @@ Font family
     padding: 0px;
     box-sizing: border-box;
     text-decoration: none;
-    
 }
-
 
 p{
-    line-height: 25px;
-}
-
-
-body{
-    width: 97%;
-    max-width: 1600x;
-    margin: 1rem auto;
-    background-color: #000;
-    color:#d7e6e6;
-    font-family: 'Montserrat', sans-serif;
-}
-
-h1, h2, h3, h4{
-
-font-family: 'Russo One', sans-serif;
-text-transform: uppercase;
-text-align: center;
-letter-spacing: 2px;
-}
-
-
-h1{
-    letter-spacing: 5px; 
-    font-size: 2.5rem;
-}
-
-h2{
-
-    font-size: 1.5rem;
+    line-height: 1.6;
+    text-align: justify;
+    text-indent: 1rem;
     padding: 0.5rem 0;
 }
 
+body{
+    margin: 1rem;
+    background-color: #000;
+    color:#d7e6e6;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-flow: column nowrap;
+}
 
+h1, h2, h3, h4{
+    font-family: 'Russo One', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+h1{
+    letter-spacing: 5px; 
+    font-size: 2rem;
+}
+
+h2{
+    font-size: 1.5rem;
+    padding: 0.5rem 0;
+}
 
 .button {
     display: flex;
     align-items: center;
     text-transform: uppercase;
-
 }
     .button a{
         color:#d7e6e6;
-
-        font-size: 1.2rem;
         padding: 0.3rem 1rem;
         background-color:#1c2f22;
         border-radius: 1rem;
@@ -95,7 +76,6 @@ h2{
         .button a:hover{
             color: #ca2d2d;
             background-color:#d7e6e6;
-
         }
         .button a:active {
             transform: translateY(3px);
@@ -103,41 +83,38 @@ h2{
             color: #1c2f22;
             background-color:#00ffff;
         }
-        /* .button a:visited {
-            color: #1c2f22;
-            background-color:#F78900;
-        } */
 
 /***********************************  HEADER ***************************************/
 
 header{
     display: flex;
     flex-flow: column nowrap;
+    background-color: red;
+    margin-bottom: 2rem;
 }
     .header-logo{
         display: flex;
-        flex-flow: row nowrap;
-        justify-content: center;
+        flex-direction: column;
         align-items: center;
     }
         .header-logo img{
-            width: 108px;
+            width: 50px;
         }
         .header-logo h1{
             color: #ca2d2d;
-            margin: 0 0 0 0.5rem;
+            margin: 1rem;
         }
     .header-nav ul{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-    align-items: center;
-    }
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }    
         .header-nav a{
             font-family: 'Russo One', sans-serif;
             text-decoration: none;
-            margin: 0.5rem;
-            }
+            margin: 1rem 1rem;
+            white-space:nowrap;
+        }
 
 
 /***********************************  FOOTER ***************************************/
@@ -145,17 +122,18 @@ header{
 .footer{
     display: flex;
     flex-direction: column;
+    background-color: red;
+    margin: 2rem 0 0;
 }
     .footer .footer-icons{
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-between;
-        margin-bottom: 1rem;
+        padding: 1rem 0;
     }
         .footer .footer-icons .arriba{
-           
             justify-content: center;
-            margin: 0 2rem
+            margin: 0 1rem
         }
             .footer .footer-icons .arriba a{
                 padding: 0 5rem;
@@ -169,12 +147,10 @@ header{
             .footer .footer-icons .social ul{
                 display: flex;
                 flex-flow: row nowrap;
-                text-decoration: none;
                 list-style: none;
                 }
                 .footer .footer-icons .social ul li a{
                     font-size: 1.5rem;
-                    color: inherit;
                     border-radius: 50%;
                     border: 3px solid #d7e6e6;
                     width: 3rem;
@@ -183,7 +159,7 @@ header{
                     align-items: center;
                     justify-content: center;
                     text-decoration: none;
-                    margin: 0 1rem;
+                    margin: 0 0.5rem;
                 }
                 .fa-linkedin{
                     color: #0e76a8;
@@ -208,7 +184,6 @@ header{
                         background-color: inherit;
                     }
     .footer .footer-title-neon{
-
             font-family: 'Russo One', sans-serif;
             text-align: center;
             letter-spacing: 5px;
@@ -236,184 +211,183 @@ header{
 
 .index-main{
     display: flex;
-    flex-flow: row nowrap;
-    margin: 1rem 0;
+    
 }
     .articles-index-container{
-        flex: 1 1 75%;
+        flex: 1 1 80%;
         display: flex;
         flex-flow: column nowrap;
     }
-        .arstotzka-container{
-        
-        display: flex;
-        flex-flow: column nowrap;
+        .art-arstotzka{
+                /* background-color: #300e0c; */
+                background-color: red;
+            display: flex;
+            flex-direction: column; 
+            margin-bottom: 2rem;
+            padding: 1rem;
         }
-            .art-arstotzka{
-                
-                display: flex;
-                flex-direction: row; 
-                margin-bottom: 3rem;
-            }
-                .art-arstotzka img{
-                  height: 300px;
-                  width: auto;
-                  margin-right: 1rem;
-                  align-self: center;
-                }
-                .art-arstotzka div{
-                    display: flex;
-                    flex-flow: column nowrap;
-                    justify-content: center;
-                }
-            .art-historia{
-                display: flex;
-                flex-direction: row; 
-                margin-bottom: 3rem;
-            }
-                .art-historia div{
-                    display: flex;
-                    flex-flow: column nowrap;
-                    justify-content: center;
-                }
-                .art-historia img{
-                  height: 300px;
-                  width: auto;
-                  margin-left: 1rem;
-                  align-self: center;
-                }
-            .art-himno{
-                /* background-color: orange; */
+
+        .art-historia{
+                /* background-color: #300e0c; */
+                background-color: red;
+            display: flex;
+            flex-direction: row; 
+            margin-bottom: 2rem;
+            padding: 1rem;
+        }
+            .art-historia div{
                 display: flex;
                 flex-flow: column nowrap;
-                align-items: center;
-                padding: 10rem 0 10rem;
+                justify-content: center;
             }
-                .glory-gif{
-                    
-                    background-image: url(../img/glory.gif);
-                    background-repeat: no-repeat;
-                    background-attachment: fixed;
-                    background-size: cover;
-                    background-position: center;
-                }
-        .ministries-geography-container{
-           
+            .art-historia img{
+              height: 300px;
+              width: auto;
+              padding: 1rem 0 0 1rem;
+              align-self: center;
+            }
+        .art-himno{ 
             display: flex;
-            flex-flow: row nowrap;
-            margin-top: 3rem;
+            flex-flow: column nowrap;
+            align-items: center;
+            padding: 10rem 0 10rem;
+            margin-bottom: 2rem;
         }
-            .ministries-geography-container .art-ministries{
-
-                
-                margin-right: 1rem;
-                padding: 1rem 0;
-                display: flex;
-                flex-flow: row wrap;
-                align-items: center;
-                justify-content: space-around;   
-                flex: 1 1 60%;
+            .glory-gif{
+                background-image: url(../img/glory.gif);
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: cover;
+                background-position: center;
             }
-                .politico-izq, .politico-der{
-                    width: 100px;
-                    border: 3px solid #d7e6e6;
-                    border-radius: 50%;
+       .ministries-geography-container{
+           display: flex;
+           flex-flow: row nowrap;
+       }
+        .art-ministries{
+             /* background-color: #300e0c; */
+             background-color: red;
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+            justify-content: space-around;   
+            flex: 1 1 60%;
+            
+            padding: 1rem;
+        }
+            .politico-izq, .politico-der{
+                width: 80px;
+                border: 3px solid #d7e6e6;
+                border-radius: 50%;
+            }
+            .art-ministries div{
+                
+                padding: 1rem;     
+            }
+                .art-ministries div h3{
+                    padding: 1rem 0;
                 }
-                .art-ministries div{
-                    flex: 1 1 100%;
-                    padding: 1rem 0 3rem 0;     
+                .art-ministries div hr {
+                    border: 1px double #ca2d2d;
+                    width: 70%;
+                    margin: 0.5rem auto;
                 }
-                    .art-ministries div h3{
-                        padding: 1rem 0;
-                    }
-                    .art-ministries div hr {
-                        border: 1px double red;
-                        width: 70%;
-                        margin: 0.5rem auto;
-                    }
             .art-geography{
-                flex: 1 1 40%;
-
-             
-
+                flex: 1 1 50%;
+                /* background-color: #300e0c; */
+                background-color: red;
+                align-content: center;
+                padding: 1rem;
+                margin-left: 1rem;
+               
             } 
-                .art-geography div{
-                padding: 1rem 0 2rem 2rem; 
+            .art-geography ul{
+                padding: 1rem; 
+                
+              
+                }
+                .art-geography li{
+                padding: 0 0.5rem; 
+                
               
                 }
                 .art-geography div img{
-                    width: 90%;
+                    width: 100%;
                  
-                    margin: 2rem 0; 
+                    
                 }
 
 
 
     .aside-index-container{
-        flex: 1 1 25%;
-        display: inline-flex;
+        /* background-color: #1c2f22; */
+        background-color: red;
+        flex: 1 1 20%;
+        display: flex;
         flex-flow: column nowrap;
         align-items: center;
+        justify-content: space-around;
+        padding: 1rem;
         margin-left: 1rem;
         height: 100vh;
         position: sticky;
         top: 0; /*para que funcione sticky*/
-        justify-content: space-around;
-
     }
-        .paper-news {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
+    .paper-news {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+       
+    }
+        .paper-news img{
+            width: 100%;
+            margin-top: 0.25rem;
         }
-            .paper-news img{
-                width: 70%;
-                margin-top: 0.25rem;
-            }
-        .video-news{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;  
-        }
-            .video-news figure{
-                text-align: center;
-                width: 80%;
-                font-style: italic;
-            }  
-                .video-news video{
-                    width: 90%;
-                    object-fit: contain;
-                    margin: 0.5rem 0 0.25rem;
-                    border-radius: 20px;
-                }
-        .wanted-news{
-            background-color: #055052;
-            border-radius: 10px;
-            border: 3px double #d7e6e6;
-            width: 200px;
-            padding-bottom: 1rem;;
-        }
-            .wanted-news a h3{
-                padding: 0.5rem;
-                text-align: center;
-                color: #d7e6e6;
-            }
-            .wanted-news img{
-                width: 80%;
+    .video-news{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;  
+    }
+        .video-news figure{
+            text-align: center;
+            width: 100%;
+            font-style: italic;
+        }  
+            .video-news video{
+                width: 100%;
                 object-fit: contain;
-                display: block;
-                margin: auto;
-                border-radius: 10px; 
+                margin: 0.5rem 0 0.25rem;
+                border-radius: 20px;
             }
-                .wanted-news:hover{
-                    border: 3px solid #FFD700;
-                    color:#FFD700;
-                }
-                    .wanted-news:active{
-                        transform: scale(.8);
-                }
+    .wanted-news{
+        background-color: #055052;
+        border-radius: 10px;
+        border: 3px double #d7e6e6;
+        width: 100%;
+        padding-bottom: 1rem;
+        
+    }
+        .wanted-news a h3{
+            padding: 0.5rem;
+            text-align: center;
+            color: #d7e6e6;
+        }
+        .wanted-news img{
+            width: 80%;
+            object-fit: contain;
+            display: block;
+            margin: auto;
+            border-radius: 10px; 
+        }
+            .wanted-news:hover{
+                border: 3px solid #FFD700;
+                color:#FFD700;
+            }
+                .wanted-news:active{
+                    transform: scale(.8);
+            }
 
 
 /*********************************** POSTERS STYLES ***************************************/
@@ -421,14 +395,17 @@ header{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);
-    gap: 2rem 1rem;
-    justify-items: auto;
-    align-items: start;
-    
+    gap: 1rem 1rem;
+   
+    align-items: center;
+    justify-items: center;
+    background-color: red;
 }
 
     .grid-posters img{
-        width: 100%;
+        width: 80%;
+        max-width: 400px;
+        
         box-shadow: #d7e6e6 0px 20px 30px -10px;
     }
 
@@ -437,64 +414,85 @@ header{
 .main-buscados{
     display: flex;
     flex-flow: row nowrap;
-    margin: 1rem 0;
+    
 }
 
 .grid-container-buscados{
-    flex: 1 1 75%;
+    border: 5px solid white;
+    flex: 1 1 80%;
     display: grid;
     grid-template-columns: 1fr 1fr;  
-    grid-template-rows: repeat(3, auto); /*tamaño automático para que no rebalse*/
-    grid-template-areas:
+    grid-template-rows:  auto;
+        grid-template-areas:
         "titulo     titulo"
         "imagen     descripcion"
         "alerta     alerta";
-    justify-items: center;
-    align-items: auto;
-    border: 10px solid blue;
+        column-gap: 1rem;
+    
+  
 }
     
     .grid-container-buscados .grid-header{
         grid-area: titulo;
-        background-color: brown;
-        border: 10px solid yellow;
+        background-color: red;
+        
+        align-self: center;
+   
+        
     }
+    .grid-container-buscados .grid-header p{
+       
+        text-align: center;
+   
+        
+    }
+
+
 
     .grid-container-buscados .grid-img{
         grid-area: imagen;
-        background-color: brown;
-        border: 10px solid blue;
+        background-color: green;
+        display: flex;
+        align-items: center;
+            justify-content: center;
+        
     }
         .grid-container-buscados .grid-img img{
-            width: 90%;
+            width: 100%;
+            max-width: 400px;
         }
     
     
         .grid-container-buscados .grid-table-ppal{
+            background-color: blue;
         grid-area: descripcion;
         display: grid;
         grid-template-columns: 1fr;
         justify-self: normal;
-        margin-left: 0.5rem;
+        margin-left: 1 rem;
         
     }
+
+
         .grid-container-buscados .grid-table-ppal img{
                 width: 50px;
+                
+                
             }
             .grid-container-buscados .grid-table-ppal td:nth-child(odd){
                 font-weight: bold;
                 text-transform: uppercase;
                 text-align: center;
-                border: 1px solid red;
+                
 
             }
             .grid-container-buscados .grid-table-ppal td:nth-child(even){
                 font-style: italic;
                 text-align: center;
-                border: 1px solid blue;
+                
             }
 
-        .grid-container-buscados  .grid-alert {
+        .grid-container-buscados .grid-alert {
         grid-area: alerta;
         width: 100%;
         text-align: center;
@@ -504,10 +502,16 @@ header{
         background-color: green;
     }
 
-
+    .grid-container-buscados .grid-alert p{
+       
+        
+        text-align: center;
+        
+        
+    }
     
 .main-buscados .buscados-aside{
-    flex: 1 1 25%;
+    flex: 1 1 20%;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
@@ -603,3 +607,135 @@ header{
         grid-area: imagen-2;
         background-color: orange;
     } 
+
+
+
+/***********************************  Media Queries ***************************************/
+
+
+
+@media all and (max-width: 960px){
+
+
+    /****** INDEX ******/
+    .index-main .articles-index-container .art-historia{
+        flex-direction: column; 
+    }
+
+    .index-main .articles-index-container .ministries-geography-container{
+        flex-direction: column;
+    }
+    .index-main .articles-index-container .ministries-geography-container .art-ministries{
+        margin-bottom: 2rem;
+    }
+    .index-main .articles-index-container .ministries-geography-container .art-geography{
+        margin-left: 0;
+    }
+
+/****** BUSCADOS ******/
+
+    .grid-container-buscados{
+     
+        grid-template-columns: 1fr;  
+        grid-template-rows:  auto;
+            grid-template-areas:
+            "titulo"     
+            "imagen"     
+            "descripcion"
+            "alerta";     
+            row-gap: 1rem;
+        
+      
+    }
+
+
+}
+
+@media all and (max-width: 720px) {
+
+        /****** INDEX ******/
+    .index-main{
+        flex-direction: column;
+    }
+    .index-main .articles-index-container .ministries-geography-container .art-ministries img{
+        display: none;
+    }
+    .index-main .articles-index-container .ministries-geography-container .art-geography {
+        margin-bottom: 2rem;
+    }
+    .index-main .aside-index-container {
+        margin-left: 0;
+    }
+
+    .index-main .aside-index-container .video-news{
+        margin: 2rem 0;
+    }
+
+    .index-main .aside-index-container .wanted-news
+    {
+        width: 50%;
+    }
+
+
+/****** BUSCADOS ******/
+
+    .main-buscados{
+        flex-direction: column;
+        
+    }
+
+
+}
+
+@media all and (max-width: 600px) {
+        /****** INDEX ******/
+    header .header-nav ul{
+        flex-direction: column;
+        align-items: center;
+       
+    } 
+    header .header-nav li{
+        width: 100%;
+        
+    }
+
+
+        header .header-nav a{
+            margin:  10px;
+            width: 100%;
+            text-align: center;
+            font-size: 1.5rem;;
+            
+        
+        }
+    .footer .footer-icons{
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .footer .footer-icons .arriba {
+        width: 100%;
+    
+        text-align: center;
+        
+    }
+    .footer .footer-icons .arriba a{
+        width: 100%;
+        
+        
+        
+    }
+
+    .footer .footer-icons .social{
+        margin: 1rem;
+    }
+
+ /****** POSTERS ******/
+.grid-posters{
+    grid-template-columns: 1fr;
+}
+
+
+   
+
+}

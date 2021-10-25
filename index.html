@@ -20,48 +20,63 @@
         rel="stylesheet">
 
     <!--Style Sheets-->
-    <link rel="stylesheet" type="text/css" href="css/style2.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 
     <title>Glory to Arstotzka</title>
 </head>
 
 <!--El TPO deberá cumplir con los siguientes requisitos:
-¿Cuándo se entrega?
-Fecha límite de entrega: semana del 25/10 al 29/10.
+¿Cuándo se entrega? Fecha límite de entrega: semana del 25/10 al 29/10.
+Entregado Lunes 25/10/2021
+
+
 ¿Qué hay que entregar?
 El TPO deberá cumplir con los siguientes requisitos:
 
 ● Poseer al menos 3 páginas html, siendo su temática libre.
-OK. Se realizan 5 páginas html.
+Se realizan 5 páginas: HOME, POSTERS, BUSCXADOS, DENUNCIAS y PAPERS, PLEASE.
 
 ● Utilizar etiquetas semánticas para estructurar el sitio de forma correcta.
-FALTA REVISAR
+Ok
 
 ● Contener un formulario de contacto con validación realizada mediante Javascript.
 El formulario se encuentra en la página DENUNCIAS.
 
 ● Utilizar iframes, íconos de FontAwesome, y fuentes locales o bien de Google Fonts.
-● iframes -> ver página BUSCADOS, "puesto de control fronterizo"
-● íconos de FontAwesome -> Utilizados para los socials media
-● fuentes locales o bien de Google Fonts -> Se utilizan de Google Fonts:
-        font-family: 'Roboto', sans-serif;-> para cuerpo
-        font-family: 'Russo One', sans-serif;-> para títulos
-
+iframes -> ver página BUSCADOS, "puesto de control fronterizo"
+íconos de FontAwesome -> Utilizados para los socials media en el footer
+fuentes locales o bien de Google Fonts -> Se utilizan de Google Fonts:
+   Para los encabezados:
+        font-family: 'Russo One', sans-serif;
+   Para el cuerpo:
+        font-family: 'Montserrat', sans-serif;
 
 ● Tener una página totalmente responsive con 3 puntos de corte para 3 tamaños de
 dispositivos (PC escritorio, Tablet, Celular).
-FALTA
+Todas las páginas se realizaron responsive. Se tuvo en cuenta para evaluarlo las siguientes medidas de pantalla:
+
+PC escritorio > 960px
+720px < Tablet < 960 px
+Celular < 720px
+
+BreakPoints utilizados:
+                        960 px
+                        720 px
+                        600 px
+Tamaño mínimo: 300px
+Tamaño máximo: 1200px
 
 ● Utilizar al menos una animación, transformación o una transición (indicar dónde fue
 incorporada la animación).
-Se utilizan en los botones del header y del footer
-
+Se utilizan:
+Transiciones en los botones del header y en los anchors  en los botones del header y del footer
+Animación en el footer
 
 ● Poseer una estructura HTML maquetada con Flexbox y/o Grid.
-
+Todas las páginas fueron maquetadas con Flexbox y/o grid, a excepción de la página DENUNCIAS al utilizar Bootstrap.
 
 ● Sólo podrá utilizar Bootstrap en la página del formulario del sitio web.
-
+Se utilizó en la página DENUNCIAS.
 
 ● La página deberá subirse a un servidor on-line para poder ser navegada por el
 Docente. Ejemplo: Netlify o similar.
@@ -95,7 +110,6 @@ agregándole lo que falte para cumplir con los requisitos.
             <img src="img/logo.png" alt="Logo de Arstotzka">
             <h1>Glory to Arstotzka</h1>
         </div>
-
         <nav class="header-nav">
             <ul>
                 <li class="button"><a href="index.html">Home</a></li>
@@ -114,21 +128,20 @@ agregándole lo que falte para cumplir con los requisitos.
             <article class="art-arstotzka">
                 <h2>Arstotzka</h2>
                 <div>
-                    <p> Arstotzka es un país comunista en <a href="papers-please.html">Papers, Please</a>. Su sede
-                        de
-                        gobierno se encuentra en Paradizna, su ciudad capital.
+                    <p> Arstotzka es un país comunista en <span translate="no">Papers, Please</span>. Su sede
+                        de gobierno se encuentra en Paradizna, su ciudad capital.
                     </p>
                     <p>
                         Arstotzka atrae a muchos inmigrantes y trabajadores extranjeros, por lo que el puesto de
-                        control
-                        fronterizo de Grestin es un lugar "caliente" y es donde toda la acción tiene lugar.
+                        control fronterizo de Grestin es un lugar "caliente" y es donde toda la acción tiene lugar.
                     </p>
                     <p>
                         El gobierno arstotzkiano utiliza la pena capital y el trabajo forzoso como sistema de
                         castigo.
-                        Se espera que los arstotzkianos mantengan a sus familias y tengan al menos a un miembro de
-                        su
-                        familia con vida para continuar el crecimiento del país.
+                    </p>
+                    <p>
+                        Se espera que los arstotzkianos mantengan a sus familias y tengan al menos a un miembro
+                        de su familia con vida para continuar el crecimiento del país.
                     </p>
                     <p>
                         El lema del país es "Gloria a Arstotzka".
@@ -141,26 +154,18 @@ agregándole lo que falte para cumplir con los requisitos.
                     <h2>Historia reciente</h2>
                     <!--decorar textos y no traducir y poner marcadores de que es EZIC-->
                     <p>
-                        Arstotzka y Kolechia estuvieron en la <span class="cursiva">Guerra de los Seis Años</span>
-                        poco
-                        antes de Septiembre
-                        de 1982 y las relaciones entre los dos los países siguen siendo aún volátiles. Un tema
-                        particularmente acalorado es el estado de la ciudad de Grestin, una ciudad-frontera dividida
-                        en
-                        East Grestin, que se encuentra bajo la jurisdicción de Arstotzka, y West Grestin, que es
-                        parte
-                        de Kolechia.
-                       
-                        </p>
-                        <p>
+                        Arstotzka y Kolechia estuvieron en la "Guerra de los Seis Años" poco
+                        antes de Septiembre de 1982 y las relaciones entre los dos los países siguen siendo aún
+                        volátiles. Un tema particularmente acalorado es el estado de la ciudad de Grestin, una
+                        ciudad-frontera dividida en East Grestin, que se encuentra bajo la jurisdicción de Arstotzka, y
+                        West Grestin, que es parte de Kolechia.
+                    </p>
+                    <p>
                         Cruzar la frontera entre las dos naciones había sido imposible, incluso para los ciudadanos
-                        de
-                        Arstotzka, hasta el 23 de Noviembre de 1982 cuando Arstotzka abrió un puesto de control para
+                        de Arstotzka, hasta el 23 de Noviembre de 1982 cuando Arstotzka abrió un puesto de control para
                         permitir la entrada desde Kolechia. Sin embargo, constantes ataques terroristas en la
-                        frontera,
-                        contrabando, tráfico de personas y disturbios causados principalmente ​​por <span
-                            class="cursiva negrita" title="Organización terrorista">E.Z.I.C.</span> hizo que
-                        Arstotzka
+                        frontera, contrabando, tráfico de personas y disturbios causados principalmente ​​por <span
+                            title="Organización terrorista">E.Z.I.C.</span> hizo que Arstotzka
                         aplicara políticas fronterizas más estrictas que incluyen desde la confiscación de
                         pasaportes y
                         auditorías de información completa para todos los trabajadores del gobierno Arstotzkiano,
@@ -174,11 +179,12 @@ agregándole lo que falte para cumplir con los requisitos.
             <article class="art-himno glory-gif">
                 <h2>Himno nacional</h2>
                 <div class="himno-audio">
-                    <audio src="music/Papers_Please_Theme_Song.mp3" controls="muted"></audio>
+                    <audio src="music/Papers_Please_Theme_Song.mp3" controls="muted" alt="himno de Arstotzka"></audio>
                 </div>
             </article>
 
             <div class="ministries-geography-container">
+
                 <article class="art-ministries">
                     <img src="img/control.PNG" class="politico-izq" alt="imagen de un político de menor rango">
                     <h2>Ministerios</h2>
@@ -219,7 +225,6 @@ agregándole lo que falte para cumplir con los requisitos.
                 <article class="art-geography">
 
                     <h2>Geografía</h2>
-
                     <div>
                         <p>Geográficamente, Arstotzka bordea con los países de Kolechia y Obristan, y se encuentra
                             dividido 8
@@ -236,7 +241,6 @@ agregándole lo que falte para cumplir con los requisitos.
                             <li>Fardesto</li>
                         </ul>
 
-
                         <img src="img/mapa.png" alt="mapa de Arstotzka">
                     </div>
 
@@ -251,7 +255,7 @@ agregándole lo que falte para cumplir con los requisitos.
                 <h2>Últimas noticias</h2>
                 <img src="img/news/headline.png" alt="tapa de diario, atentado">
             </div>
-            
+
             <div class="video-news">
                 <h3>Video exclusivo</h3>
                 <figure>
@@ -276,6 +280,7 @@ agregándole lo que falte para cumplir con los requisitos.
             <div class="button arriba">
                 <a href="#ir-arriba"><i class="fas fa-chevron-up"></i></a>
             </div>
+
             <div class="social">
                 <ul>
                     <li>
@@ -294,8 +299,10 @@ agregándole lo que falte para cumplir con los requisitos.
                 </ul>
             </div>
         </div>
-        <h4 class="footer-title-neon">&copy; Power by mF | Martin Frontroth</h4>
+
+        <h4 class="footer-title-neon">Martin Frontroth</h4>
     </footer>
+
 </body>
 
 </html>

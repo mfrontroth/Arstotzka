@@ -91,10 +91,11 @@ formulario.addEventListener('submit', (e) => {
     var declaracion = document.getElementById('input_declaracion').value;
     const terminos = document.getElementById('input_terminos');
     
-    if(declaracion ==="" || !terminos.checked){
-        alert("Debe escribir la declaración y aceptar los términos y condiciones");
-        } else {
-
+    if(declaracion ===""){
+        alert("Debe escribir la declaración"); 
+        } else if(!terminos.checked){
+            alert("Debe aceptar los términos y condiciones");
+        }else{
             var flag = true;
             for (const [key, valor] of Object.entries(campos)) {
                 console.log(flag);

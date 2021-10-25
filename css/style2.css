@@ -34,6 +34,11 @@ p{
     padding: 0.5rem 0;
 }
 
+html {
+    margin:    0 auto;
+    max-width: 1200px;
+}
+
 body{
     margin: 1rem;
     background-color: #000;
@@ -41,6 +46,8 @@ body{
     font-family: 'Montserrat', sans-serif;
     display: flex;
     flex-flow: column nowrap;
+    
+    
 }
 
 h1, h2, h3, h4{
@@ -516,41 +523,38 @@ header{
     flex-flow: column nowrap;
     align-items: center;
     margin-left: 1rem;
-    background-color: brown;
-    color:#888888;
+    background-color: red;
+    padding: 1rem;
     justify-content: space-around; 
-    
 }
-    .puesto-fronterizo, .oficial-a-cargo{
+        .puesto-fronterizo iframe{
+            width: 100%;
+            margin: 1rem 0;
+        }
+
+
+
+    .oficial-a-cargo{
         display: flex;
         flex-direction: column;
         align-items: center;
-        
+        margin: 1rem 0;
     }
-
-        .puesto-fronterizo iframe{
+        .oficial-a-cargo img{
             width: 100%;
-            margin-top: 0.25rem;
-        }
-        .puesto-fronterizo p{
-            width: 80%;
-            font-style: italic;
-        }
-
-    .oficial-a-cargo img{
-        width: 80%;
-        object-fit: contain;
-        display: block;
-        margin: auto;
-        border-radius: 10px; 
-        
-        
-    } 
-
+            object-fit: contain;
+            display: block;
+            margin: auto;
+            border-radius: 10px; 
+        } 
+        .oficial-a-cargo p{
+            text-align: center;
+            text-indent: 0;
+        } 
     
 /*********************************** DENUNCIAS Styles ***************************************/
  
-
+/* Se realiza con los estilos de Bootstrap */
 
 
 
@@ -633,7 +637,10 @@ header{
     }
 
 /****** BUSCADOS ******/
-
+.main-buscados{
+    flex-direction: column;
+    
+}
     .grid-container-buscados{
      
         grid-template-columns: 1fr;  
@@ -644,9 +651,44 @@ header{
             "descripcion"
             "alerta";     
             row-gap: 1rem;
-        
-      
     }
+
+    .main-buscados .buscados-aside{
+        margin: 2rem 0;
+        flex-flow: row wrap;
+    }
+        .main-buscados .buscados-aside .puesto-fronterizo{
+            flex: 1 1 auto;
+            align-self: flex-start;
+        }
+            .main-buscados .buscados-aside .puesto-fronterizo iframe{
+                height: 300px;
+            }
+
+
+
+        .main-buscados .buscados-aside .oficial-a-cargo{
+            flex: 1 1 auto;
+            margin-left: 1rem;
+        }
+            .main-buscados .buscados-aside .oficial-a-cargo img{
+                max-width: 200px;
+            }
+
+        .main-buscados .buscados-aside .button{
+            flex: 1 1 100%;
+          
+            justify-content: center;
+
+        }
+            .main-buscados .buscados-aside .button a{
+            margin:  10px;
+            text-align: center;
+            font-size: 1.5rem;;
+            
+        
+        }
+        
 
 
 }
@@ -735,7 +777,9 @@ header{
     grid-template-columns: 1fr;
 }
 
-
-   
+ /****** BUSCADOS ******/
+.main-buscados .buscados-aside .button a{
+    width: 100%;
+}
 
 }
